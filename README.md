@@ -228,3 +228,7 @@ connexion.php(admin)
 fiche_gite_admin.php(fiche de gite avec un bouton modifier et un bouton supprimer)
 form_creategite.php
 form_updategite.php
+-------------------------------------------
+ebdel est ici
+
+
