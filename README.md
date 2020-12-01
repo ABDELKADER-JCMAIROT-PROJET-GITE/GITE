@@ -229,6 +229,6 @@ fiche_gite_admin.php(fiche de gite avec un bouton modifier et un bouton supprime
 form_creategite.php
 form_updategite.php
 -------------------------------------------
-ebdel est ici
+abdel est ici
 
 
