@@ -2,8 +2,7 @@
 
 ## TEAM :
 
-_Abdelkader Aouini_
-_Jean Christophe Mairot_
+_Abdelkader Aouini_, _Jean Christophe Mairot_
 
 ## Deadline : _15 jours_
 
