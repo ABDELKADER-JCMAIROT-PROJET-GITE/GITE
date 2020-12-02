@@ -44,7 +44,7 @@ _Abdelkader Aouini_, _Jean Christophe Mairot_
 
 - [ ] réaliser une plateforme de réservation de gîtes se situant dans une zone géographique précise (au choix).
 - [ ] choisir une région : pour les gîtes
-- [x] chercher au moin trois site reference
+- [x] chercher au moin trois sites reference
 
 ## ADMIN
 
@@ -106,13 +106,13 @@ _Des categorie dans un select sur page d'accueil et sur page votre selection_
 
 **DOSSIER asset**
 
-1 _Fichier_ css
-1 _Fichier_ giteFiche.css
-1 _Fichier_ gitEtiquette.css
-1 _Fichier_ nav.css
-1 _Fichier_ global.css
-1 _Fichier_ variable.css
-1 _Fichier_ formulaire.css
+- _Fichier_ css
+- _Fichier_ giteFiche.css
+- _Fichier_ gitEtiquette.css
+- _Fichier_ nav.css
+- _Fichier_ global.css
+- _Fichier_ variable.css
+- _Fichier_ formulaire.css
 
 **DOSSIER js**
 
@@ -120,11 +120,11 @@ _Des categorie dans un select sur page d'accueil et sur page votre selection_
 
 **DOSSIER img**
 
-1 _nom de l'image :adaptable au alt(html)_
-1 _taille image fiche petit rectangle et grand rectangle_
-1 _taille image etiquette carre_
-1 _taille image bando_
-1 _(.jpeg,.png,.gif,.svg,.webp)_
+- _nom de l'image :adaptable au alt(html)_
+- _taille image fiche petit rectangle et grand rectangle_
+- _taille image etiquette carre_
+- _taille image bando_
+- _(.jpeg,.png,.gif,.svg,.webp)_
 
 **DOSSIER ref**
 
@@ -132,36 +132,37 @@ _textes,maquette,image non modifier_
 
 **DOSSIER class**
 
-1 _Fichier class hebergement(parent)_
-1 _Fichier class creat : create.class.php_
-1 _Fichier class read : read.class.php_
-1 _Fichier class update : update.class.php_
-1 _Fichier class delete : delete.class.php_
-1 _Fichier class chambre :chambre.class.php_
-1 _Fichier class apparetement : appart.class.php_
-1 _Fichier class maison-villa : maison.class.php_
-1 _Fichier class logements prestigeux : maison.class.php_
+- _Fichier class hebergement(parent)_
+- _Fichier class creat : create.class.php_
+- _Fichier class read : read.class.php_
+- _Fichier class update : update.class.php_
+- _Fichier class delete : delete.class.php_
+- _Fichier class chambre :chambre.class.php_
+- _Fichier class apparetement : appart.class.php_
+- _Fichier class maison-villa : maison.class.php_
+- _Fichier class logements prestigeux : maison.class.php_
 
 **DOSSIER inc (inclusion php)**
 
-1 Fichier _init.php(bdd--->pdo)_
-1 Fichier _header.php_
-1 Fichier _footer.php_
+- Fichier _init.php(bdd--->pdo)_
+- Fichier _header.php_
+- Fichier _footer.php_
 
 **RACINE**
 
-1 Fichier _index.php(page d'acceuil)_
-1 Fichier _fiche_gite.php(avec un formulaire de reservation)_
-1 Fichier _connexion.php(admin)_
-1 Fichier _fiche_gite_admin.php(fiche de gite avec un bouton modifier et un bouton supprimer)_
-1 Fichier _form_creategite.php_
-1 Fichier _form_updategite.php_
+- Fichier _index.php(page d'acceuil)_
+- Fichier _fiche_gite.php(avec un formulaire de reservation)_
+- Fichier _connexion.php(admin)_
+- Fichier _fiche_gite_admin.php(fiche de gite avec un bouton modifier et un bouton supprimer)_
+- Fichier _form_creategite.php_
+- Fichier _form_updategite.php_
 
 **CONTENU**
-1 Objet de la class chambre : minimum trois instances(travaillées)
-1 Objet de la class appartement : minimum trois instances(travaillées)
-1 Objet de la class maison-villa : minimum trois instances(travaillées)
-1 Objet de la class logements prestigeux : minimum trois instances(travaillées)
+
+- Objet de la class chambre : minimum trois instances(travaillées)
+- Objet de la class appartement : minimum trois instances(travaillées)
+- Objet de la class maison-villa : minimum trois instances(travaillées)
+- Objet de la class logements prestigeux : minimum trois instances(travaillées)
 
 ## HELP :
 
