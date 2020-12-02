@@ -26,9 +26,9 @@ _Jean Christophe Mairot_
 - https://www.php.net/manual/fr/intro-whatis.php
 - https://htmlcolorcodes.com/fr/tableau-de-couleur/tableau-de-couleur-du-web/
 
-## Références Web :
+## Références Web :(ref pour notre site www.booking.com)
 
-- https://www.booking.com/--------------->ref pour l'equipe
+- https://www.booking.com/
 - https://www.gites-de-france.com/fr
 - https://www.gites.fr/
 - https://www.holidaycottages.co.uk/last-minute
