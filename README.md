@@ -2,7 +2,8 @@
 
 ## TEAM :
 
-_Abdelkader Aouini_, _Jean Christophe Mairot_
+FRONT END : _Abdelkader Aouini_
+BACK END : _Jean Christophe Mairot_
 
 ## Deadline : _15 jours_
 
