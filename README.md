@@ -1,234 +1,194 @@
-Projet Réservation de gîtes
-Projet par groupes - Temps estimé : 15 jours
-Technologies, outils et concepts travaillés : PHP, programmation orientée objet (POO), HTML, CSS, MCD "Modèle Conceptuel des Données - Base de données"
+## PROJET: Réservation de gîtes
 
----
+## TEAM :
 
-nouvelle techno : programmation orientée objet (POO)
-nouvelle techno : MCD "Modèle Conceptuel des Données
+_Abdelkader Aouini_
+_Jean Christophe Mairot_
 
----
+## Deadline : _15 jours_
 
-Description du projet :
-Vous allez réaliser une plateforme de réservation de gîtes se situant dans une zone géographique précise (au choix).
+## Technologies :
 
------ choisir une région : pour les gîtes ---------------
+- PHP / POO
+- HTML
+- CSS
+- MCD (Modèle Conceptuel des Données - Base de données)
+- PHOTOSHOP
 
-- chercher ou moin trois site reference
+## Outils Web :
 
-La plateforme est gérée par un seul administrateur qui pourra s'occuper d'ajouter, modifier ou supprimer des gîtes.
+- https://getbootstrap.com/
+- https://fontawesome.com/
+- https://fonts.google.com/
+- https://unsplash.com/
+- https://pixabay.com/fr/
+- https://codepen.io/
+- https://www.php.net/manual/fr/intro-whatis.php
+- https://htmlcolorcodes.com/fr/tableau-de-couleur/tableau-de-couleur-du-web/
 
------- connexion / deconnexion ---------------------------
------- interface CRUD : ----------------------------------------------
+## Références Web :
 
-- 1 class creat
-- 1 class read
-- 1 class update gestion des réservations
-- 1 class delete
+- https://www.booking.com/--------------->ref pour l'equipe
+- https://www.gites-de-france.com/fr
+- https://www.gites.fr/
+- https://www.holidaycottages.co.uk/last-minute
+- https://www.sykescottages.co.uk/
 
-Côté client pas besoin de compte utilisateur. On pourra visualiser la liste des différents gîtes ainsi que leurs détails.
+## Tuto divers :
 
-- gestion des cookies (+++)
+- https://www.pierre-giraud.com/php-mysql-apprendre-coder-cours/introduction-programmation-orientee-objet/
+- https://www.grafikart.fr/formations/programmation-objet-php
+- https://sql.sh/
 
--------- annuaire des gites et detail des gites------------
-1 page accueil avec (1photo, titre, txt lien vers le produit)
-1 page votre selection (3photo, titre,....)
+## Description du projet :
 
-On pourra aussi effectuer une recherche pour trouver un gîte selon ses critères et ses disponibilités.
--------- recherche dispo gîte ----------------------------
+[] réaliser une plateforme de réservation de gîtes se situant dans une zone géographique précise (au choix).
+[] choisir une région : pour les gîtes
+[x] chercher ou moin trois site reference (https://www.booking.com/)
 
-- des categorie dans un select sur page d'accueil et sur page votre selection
-  select date debut
-  select date fin
-  select nombre de couchages
-  etc...
+## ADMIN
 
-Il vous faudra créer une classe représentant un hébergement.
--------- class hebergement parent-----------------
+[] La plateforme est gérée par un seul administrateur qui pourra s'occuper d'ajouter, modifier ou supprimer des gîtes.
+[] Connexion / Deconnexion (Admin)
+[] CRUD
+[] Poo Class Create
+[] Poo Class Read
+[] Poo Class Update
+[] Poo Class Delete
 
-Il existera plusieurs catégories d’hébergements
--------- class chambre----------------------------
-minimum trois instances(travaillées)
--------- class appartement -----------------------
-minimum trois instances(travaillées)
--------- class maison-villa ----------------------
-minimum trois instances(travaillées)
+**Fiches des Gîtes** (une fiche détaillé des gîtes ADMIN)
+[] Idem fiche gite du user
+[] Bouton Modifier
+[] Bouton Supprimer
 
-(exemple : chambre, appartement, maison, villa…), pour chacune il faudra créer une instance de cette classe.
-Il faudra au minimum pour chaque hébergement :
+**Base de donnée**
+[] BDD gite
+[] Table admin (connexion / deconnexion)
+[] Table gitec()
+[] Table reservation par semaine du samedi au samedi()
 
-dans la page accueil :
+## Utilisateur
 
-Intitulé de l’hébergement
-photo
-Emplacement géographique
-Nombre de couchages
-prix
+**Gestion des Cookies** (+)
 
-Dans la page votre selection :
+**Liste des Gîtes** (annuaire en page accueil : étiquettes)
+[] Photo ratio carre
+[] Un titre (Intitulé de l’hébergement)
+[] Emplacement géographique
+[] Nombre de couchages
+[] Un prix
+[] Un lien vers (la fiche produit) page votre sélection
 
-Intitulé de l’hébergement
-Description
-Photo(s)
-Nombre de couchages
-Nombre de salles de bain
-Emplacement géographique
-Prix
-Disponibilité
-formulaire de réservation(envoie de mail sur codeur.fr pour la reservation)
+**Fiches des Gîtes** (une fiche détaillé des gîtes)
+[] Trois Photos ratio rectangle (2 types de rectangle : 1 même hauteur, 2 largeur) paysage
+[] Titre (Intitulé de l’hébergement)
+[] Emplacement géographique
+[] Description
+[] Spécificités (piscine, nbr salle de bain, jardin, etc...)
+[] Nombre de couchages
+[] Un prix
+[] Disponibilité
+[] Formulaire de réservation (envoie de mail sur codeur.fr pour la reservation.)
 
-Chaque catégorie d’hébergement peut avoir des spécificités,
-par exemple pour un appartement ou plus grand on peut indiquer le nombre de pièces,
-pour une maison la présence d’un jardin particulier etc.
+**Formulaire de Recherche**
+_Des categorie dans un select sur page d'accueil et sur page votre selection_
 
----
+[] Select date debut
+[] Select date Fin
+[] Select nombre de couchage
+[] Select Type de couchage
 
-Côté administrateur on aura :
+## ARCHITECTURE DU PROJET
 
-Un back-office (connecté à une base de données) permettant :
--------------------- 1 table reservation clef étrangère lié au gite----------
-id_gite (clef etrangere) date1 date2 date3 date4
-hotel nd ok nd ok
--------------------- 1 table connexion --------------------------------------
--------------------- 1 table gites ------------------------------------------
-id_gite
+**DOSSIER asset**
 
-De visualiser l'ensemble des gîtes et leur statut (occupé ou libre)
-D’ajouter des gîtes
-De supprimer des gîtes
-De les modifier
-Côté utilisateur on aura :
+1 _Fichier_ css
+1 _Fichier_ giteFiche.css
+1 _Fichier_ gitEtiquette.css
+1 _Fichier_ nav.css
+1 _Fichier_ global.css
+1 _Fichier_ variable.css
+1 _Fichier_ formulaire.css
 
-Une page accueil avec :
-La liste des gîtes disponibles
-Un formulaire de recherche (date de départ, date de fin, nombre de couchages
-Une fiche par gîte avec un formulaire de réservation
-La réception d'un mail lorsque la réservation est effectué
+**DOSSIER js**
 
----
+1 _global.js_
 
-## Gestion des disponibilités :
+**DOSSIER img**
 
-Lorsqu'un gîte est réservé pour une période il devient indisponible pour celle-ci.
-Il reste accessible par une recherche mais il faudra indiquer les jours d'indisponibilité.
-Il est possible de faire une réservation pour les jours disponibles.
+1 _nom de l'image :adaptable au alt(html)_
+1 _taille image fiche petit rectangle et grand rectangle_
+1 _taille image etiquette carre_
+1 _taille image bando_
+1 _(.jpeg,.png,.gif,.svg,.webp)_
+
+**DOSSIER ref**
+
+_textes,maquette,image non modifier_
+
+**DOSSIER class**
+
+1 _Fichier class hebergement(parent)_
+1 _Fichier class creat : create.class.php_
+1 _Fichier class read : read.class.php_
+1 _Fichier class update : update.class.php_
+1 _Fichier class delete : delete.class.php_
+1 _Fichier class chambre :chambre.class.php_
+1 _Fichier class apparetement : appart.class.php_
+1 _Fichier class maison-villa : maison.class.php_
+1 _Fichier class logements prestigeux : maison.class.php_
+
+**DOSSIER inc (inclusion php)**
+
+1 Fichier _init.php(bdd--->pdo)_
+1 Fichier _header.php_
+1 Fichier _footer.php_
+
+**RACINE**
+
+1 Fichier _index.php(page d'acceuil)_
+1 Fichier _fiche_gite.php(avec un formulaire de reservation)_
+1 Fichier _connexion.php(admin)_
+1 Fichier _fiche_gite_admin.php(fiche de gite avec un bouton modifier et un bouton supprimer)_
+1 Fichier _form_creategite.php_
+1 Fichier _form_updategite.php_
+
+**CONTENU**
+1 Objet de la class chambre : minimum trois instances(travaillées)
+1 Objet de la class appartement : minimum trois instances(travaillées)
+1 Objet de la class maison-villa : minimum trois instances(travaillées)
+1 Objet de la class logements prestigeux : minimum trois instances(travaillées)
+
+## HELP :
+
 Niveau 1 :
 Lorsqu'un gîte est réservé il devient indisponible et ne plus apparaître dans les recherche.
 Une fois disponible on peut le réserver à nouveau
 
-    Niveau 2 :
-    Lorsqu'un gîte est réservé pour une période il devient indisponible pour celle-ci.
-    Il reste accessible par une recherche mais il faudra indiquer les jours d'indisponibilité.
-    Il est possible de faire une réservation pour les jours disponibles.
+Niveau 2 :
+Lorsqu'un gîte est réservé pour une période il devient indisponible pour celle-ci.
+Il reste accessible par une recherche mais il faudra indiquer les jours d'indisponibilité.
+Il est possible de faire une réservation pour les jours disponibles.
 
----
+## Objectifs :
 
-Les plus : à réaliser si vous avez le temps
-
-Afficher un calendrier de disponibilité de chaque gîte
-Afficher la localisation des gîtes sur une carte interactif
-
----
-
-Rappel des tâches :
-Benchmark(marketing) + maquette du site (temps estimé : 3 jours)
-Concevoir un MCD
-Concevoir un MLD
-Concevoir le modèle physique
-Concevoir le diagramme de la classe "hébergement" ensemble
-Se répartir pour la réalisation du back-end & front-end
-Faire un point avec le formateur tout le long du projet pour valider chaque étape.
-
-Objectifs :
 Découvrir et manipuler la programmation orientée objet en PHP
 Consolider les bases du CRUD
 Consolider/approfondir les bases du langage SQL
 Thèmes :
 Programmation orientée objet
 Bases de données
-Ressources :
-Parcours "PHP > Programmation orientée objet" sur vos-formations.com
 
-https://www.pierre-giraud.com/php-mysql-apprendre-coder-cours/introduction-programmation-orientee-objet/
+Benchmark(marketing) + maquette du site (temps estimé : 3 jours)
+Concevoir un MCD
+Concevoir un MLD
+Concevoir le modèle physique
+Concevoir le diagramme de la classe "hébergement" ensemble
 
-https://www.grafikart.fr/formations/programmation-objet-php
+## En plus
 
-https://sql.sh/
-------------------------------------------------------------------- question
+Afficher un calendrier de disponibilité de chaque gîte
+Afficher la localisation des gîtes sur une carte interactif
 
-- la reservation coté client (panier ou juste contact avec un conseillé "envoie de mail" et gestion du dossier par un conseillé)
-  https://www.booking.com/--------------->ref pour l'equipe
-  https://www.gites-de-france.com/fr
-  https://www.gites.fr/
-  https://www.holidaycottages.co.uk/last-minute
-  https://www.sykescottages.co.uk/
-
----
-
-https://getbootstrap.com/
-https://fontawesome.com/
-https://fonts.google.com/
-https://unsplash.com/
-https://pixabay.com/fr/
-https://codepen.io/
-https://www.php.net/manual/fr/intro-whatis.php
-https://htmlcolorcodes.com/fr/tableau-de-couleur/tableau-de-couleur-du-web/
-
----
-
-asset -------------------------------
-css
-giteFiche.css
-gitEtiquette.css
-nav.css
-global.css
-variable.css
-formulaire.css
-js
-global.js
-
----
-
-img----------------------------------
-nom de l'image :adaptable au alt(html)
-taille image fiche petit rectangle et grand rectangle
-taille image etiquette carre
-taille image bando
-(.jpeg,.png,.gif,.svg,.webp)
-
----
-
-ref----------------------------------
-textes,maquette,image non modifier
-
----
-
-class-------------------------------
-
-- 1 class creat : create.class.php
-- 1 class read : read.class.php
-- 1 class update : update.class.php
-- 1 class delete : delete.class.php
-- 1 class chambre :chambre.class.php
-- 1 class apparetement : appart.class.php
-- 1 class maison-villa : maison.class.php
-
----
-
-inc----------------------------------
-init.php(bdd--->pdo)
-header.php
-footer.php
-
----
-
-index.php(page d'acceuil)
-fiche_gite.php
-connexion.php(admin)
-fiche_gite_admin.php(fiche de gite avec un bouton modifier et un bouton supprimer)
-form_creategite.php
-form_updategite.php
--------------------------------------------
+jc was here
 abdel est ici
-
-
