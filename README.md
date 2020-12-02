@@ -43,9 +43,9 @@ _Jean Christophe Mairot_
 
 ## Description du projet :
 
-[]- réaliser une plateforme de réservation de gîtes se situant dans une zone géographique précise (au choix).
-[] choisir une région : pour les gîtes
-[x] chercher ou moin trois site reference (https://www.booking.com/)
+- [ ] réaliser une plateforme de réservation de gîtes se situant dans une zone géographique précise (au choix).
+- [ ] choisir une région : pour les gîtes
+- [x] chercher ou moin trois site reference (https://www.booking.com/)
 
 ## ADMIN
 
