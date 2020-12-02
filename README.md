@@ -49,55 +49,59 @@ _Jean Christophe Mairot_
 
 ## ADMIN
 
-[] La plateforme est gérée par un seul administrateur qui pourra s'occuper d'ajouter, modifier ou supprimer des gîtes.
-[] Connexion / Deconnexion (Admin)
-[] CRUD
-[] Poo Class Create
-[] Poo Class Read
-[] Poo Class Update
-[] Poo Class Delete
+- [ ] La plateforme est gérée par un seul administrateur qui pourra s'occuper d'ajouter, modifier ou supprimer des gîtes.
+- [ ] Connexion / Deconnexion (Admin)
+- [ ] CRUD
+- [ ] Poo Class Create
+- [ ] Poo Class Read
+- [ ] Poo Class Update
+- [ ] Poo Class Delete
 
 **Fiches des Gîtes** (une fiche détaillé des gîtes ADMIN)
-[] Idem fiche gite du user
-[] Bouton Modifier
-[] Bouton Supprimer
+
+- [ ] Idem fiche gite du user
+- [ ] Bouton Modifier
+- [ ] Bouton Supprimer
 
 **Base de donnée**
-[] BDD gite
-[] Table admin (connexion / deconnexion)
-[] Table gitec()
-[] Table reservation par semaine du samedi au samedi()
+
+- [ ] BDD gite
+- [ ] Table admin (connexion / deconnexion)
+- [ ] Table gitec()
+- [ ] Table reservation par semaine du samedi au samedi()
 
 ## Utilisateur
 
 **Gestion des Cookies** (+)
 
 **Liste des Gîtes** (annuaire en page accueil : étiquettes)
-[] Photo ratio carre
-[] Un titre (Intitulé de l’hébergement)
-[] Emplacement géographique
-[] Nombre de couchages
-[] Un prix
-[] Un lien vers (la fiche produit) page votre sélection
+
+- [ ] Photo ratio carre
+- [ ] Un titre (Intitulé de l’hébergement)
+- [ ] Emplacement géographique
+- [ ] Nombre de couchages
+- [ ] Un prix
+- [ ] Un lien vers (la fiche produit) page votre sélection
 
 **Fiches des Gîtes** (une fiche détaillé des gîtes)
-[] Trois Photos ratio rectangle (2 types de rectangle : 1 même hauteur, 2 largeur) paysage
-[] Titre (Intitulé de l’hébergement)
-[] Emplacement géographique
-[] Description
-[] Spécificités (piscine, nbr salle de bain, jardin, etc...)
-[] Nombre de couchages
-[] Un prix
-[] Disponibilité
-[] Formulaire de réservation (envoie de mail sur codeur.fr pour la reservation.)
+
+- [ ] Trois Photos ratio rectangle (2 types de rectangle : 1 même hauteur, 2 largeur) paysage
+- [ ] Titre (Intitulé de l’hébergement)
+- [ ] Emplacement géographique
+- [ ] Description
+- [ ] Spécificités (piscine, nbr salle de bain, jardin, etc...)
+- [ ] Nombre de couchages
+- [ ] Un prix
+- [ ] Disponibilité
+- [ ] Formulaire de réservation (envoie de mail sur codeur.fr pour la reservation.)
 
 **Formulaire de Recherche**
 _Des categorie dans un select sur page d'accueil et sur page votre selection_
 
-[] Select date debut
-[] Select date Fin
-[] Select nombre de couchage
-[] Select Type de couchage
+- [ ] Select date debut
+- [ ] Select date Fin
+- [ ] Select nombre de couchage
+- [ ] Select Type de couchage
 
 ## ARCHITECTURE DU PROJET
 
