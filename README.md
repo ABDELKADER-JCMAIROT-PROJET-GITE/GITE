@@ -44,8 +44,8 @@
 
 ## Description du projet :
 
-- [ ] réaliser une plateforme de réservation de gîtes se situant dans une zone géographique précise (au choix).
-- [ ] choisir une région : pour les gîtes
+- [x] réaliser une plateforme de réservation de gîtes se situant dans une zone géographique précise (LA FRANCE).
+- [ ] choisir des ref : pour les gîtes
 - [x] chercher au moin trois sites reference
 
 ## ADMIN
