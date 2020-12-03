@@ -33,6 +33,7 @@
 - https://www.gites.fr/
 - https://www.holidaycottages.co.uk/last-minute
 - https://www.sykescottages.co.uk/
+- https://www.toutimages.com/codes_caracteres.htm
 
 ## Tuto divers :
 
@@ -192,6 +193,7 @@ Concevoir le modèle physique
 Concevoir le diagramme de la classe "hébergement" ensemble
 
 exe
+
 ## En plus
 
 Afficher un calendrier de disponibilité de chaque gîte
