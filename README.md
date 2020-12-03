@@ -25,6 +25,7 @@
 - https://codepen.io/
 - https://www.php.net/manual/fr/intro-whatis.php
 - https://htmlcolorcodes.com/fr/tableau-de-couleur/tableau-de-couleur-du-web/
+- https://www.toutimages.com/codes_caracteres.htm
 
 ## Références Web :(ref pour notre site www.booking.com)
 
@@ -33,7 +34,6 @@
 - https://www.gites.fr/
 - https://www.holidaycottages.co.uk/last-minute
 - https://www.sykescottages.co.uk/
-- https://www.toutimages.com/codes_caracteres.htm
 
 ## Tuto divers :
 
