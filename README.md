@@ -27,6 +27,7 @@
 - https://htmlcolorcodes.com/fr/tableau-de-couleur/tableau-de-couleur-du-web/
 - https://www.toutimages.com/codes_caracteres.htm
 - https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+- https://www.youtube.com/watch?v=jaQGNDqXHxc&ab_channel=Grafikart.fr
 
 ## Références Web :(ref pour notre site www.booking.com)
 
