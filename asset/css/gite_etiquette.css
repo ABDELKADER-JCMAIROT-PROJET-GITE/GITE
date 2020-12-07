@@ -1,0 +1,16 @@
+.imgSizeSquare {
+  background-image: url(../../img/carre/chambre.jpg);
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+.sleep p i {
+  color: blue;
+}
+.etiquette {
+  margin-top: 2rem;
+}
+.btnAdmin .btn {
+  width: 100%;
+  margin-top: 5px;
+}
