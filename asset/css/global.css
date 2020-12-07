@@ -4,10 +4,35 @@
   width: 100%;
   height: 1000px;
 }
+<<<<<<< HEAD
 .form {
   margin-top: 60px;
   /*    margin-top: 100px;*/
   /*   margin-left: 150px;*/
+=======
+.test2{
+    border:1px solid green;
+    width:300px;
+    height: 300px;
+    margin-top: 50px;
+}
+.test3{
+    border:1px solid green;
+    width:500px;
+    height: 300px;
+    margin-top: 100px;
+}
+.test4{
+    border:1px solid green;
+    width:200px;
+    height: 200px;
+    margin-top:150px;
+}
+.form{
+    margin-top :60px;
+    /*margin-top: 100px;*/
+   margin-left: 150px;
+>>>>>>> c3c44fcc06e424ef93fdb85e342e484b005ca2bb
 }
 .bgsearch {
   width: 100%;
@@ -16,3 +41,14 @@
 .bg-abdel {
   background-color: #003580;
 }
+<<<<<<< HEAD
+=======
+.bg-abdel{
+    background-color: #003580 ;
+}
+.footer_abdel{
+    width: 100%;
+    height: 100px;
+    background-color: #003580;
+}
+>>>>>>> c3c44fcc06e424ef93fdb85e342e484b005ca2bb
