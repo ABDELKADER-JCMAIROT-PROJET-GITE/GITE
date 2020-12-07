@@ -5,7 +5,7 @@
   width: 100%;
 }
 .sleep p i {
-  color: blue;
+  color: var(--primary);
 }
 .etiquette {
   margin-top: 2rem;
