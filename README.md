@@ -43,16 +43,18 @@
 - https://www.grafikart.fr/formations/programmation-objet-php
 - https://vos-formations.com/apprenant/
 - https://sql.sh/
+- https://www.youtube.com/watch?v=weE2adYHPG0&ab_channel=Grafikart.fr
 
 ## Description du projet :
 
 - [x] réaliser une plateforme de réservation de gîtes se situant dans une zone géographique précise (LA FRANCE).
-- [ ] choisir des ref : pour les gîtes
+- [x] choisir des ref : pour les gîtes
 - [x] chercher au moin trois sites reference
 
 ## ADMIN
 
 - [ ] La plateforme est gérée par un seul administrateur qui pourra s'occuper d'ajouter, modifier ou supprimer des gîtes.
+- [ ] formulaire update / delete reservation
 - [ ] Connexion / Deconnexion (Admin)
 - [ ] CRUD
 - [ ] Poo Class Create

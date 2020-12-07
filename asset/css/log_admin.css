@@ -1,0 +1,14 @@
+.centerlog {
+  margin: 50px auto;
+  width: 60%;
+}
+.test2 {
+  border: 1px solid red;
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  position: sticky;
+  left: -50px;
+  top: 60px;
+  border-radius: 50%;
+}
