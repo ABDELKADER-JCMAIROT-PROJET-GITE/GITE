@@ -1,0 +1,17 @@
+/* formulaire de creation de gite */
+
+.flexFormAdmin {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+.testForm {
+  border: 1px red solid;
+}
+.formAdmin {
+  margin: 50px;
+}
+.formAdmin .btn {
+  margin-top: 50px;
+  width: 100%;
+}
