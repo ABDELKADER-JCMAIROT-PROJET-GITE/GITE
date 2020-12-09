@@ -81,12 +81,12 @@
 
 **Liste des Gîtes** (annuaire en page accueil : étiquettes)
 
-- [ ] Photo ratio carre
-- [ ] Un titre (Intitulé de l’hébergement)
+- [x] Photo ratio carre
+- [x] Un titre (Intitulé de l’hébergement)
 - [ ] Emplacement géographique
-- [ ] Nombre de couchages
-- [ ] Un prix
-- [ ] Un lien vers (la fiche produit) page votre sélection
+- [x] Nombre de couchages
+- [x] Un prix
+- [x] Un lien vers (la fiche produit) page votre sélection
 
 **Fiches des Gîtes** (une fiche détaillé des gîtes)
 
