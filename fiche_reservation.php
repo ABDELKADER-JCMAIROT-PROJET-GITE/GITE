@@ -1,0 +1,1 @@
+<!-- pour la fiche de reservation du gite -->

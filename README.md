@@ -162,6 +162,7 @@ _textes,maquette,image non modifier_
 - Fichier _fiche_gite_admin.php(fiche de gite avec un bouton modifier et un bouton supprimer)_
 - Fichier _form_creategite.php_
 - Fichier _form_updategite.php_
+- Fichier _fiche_reservation.php_
 
 **CONTENU**
 
