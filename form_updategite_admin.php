@@ -41,3 +41,10 @@ include('inc/header.php');
 <?php
 include('inc/footer.php');
 ?>
+<!-- 
+Passer la requête dans le mail du user pour que 
+l'admin le recupe dans le formulaire de reservation.
+ou
+l'admin ce sert du mail pour renseigner une interface 
+de reservation
+-->
