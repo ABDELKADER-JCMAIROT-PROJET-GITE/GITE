@@ -1,3 +1,6 @@
+<!-- quand on fait une recherche pour l'admin la totalité des gites sont visible
+même s'il n'y a plus de disponibilitée
+-->
 <?php
 include('inc/header.php');
 ?>
