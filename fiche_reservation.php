@@ -1,4 +1,4 @@
-<!-- pour la fiche de reservation du gite -->
+<!-- pour la fiche de reservation avec toutes les caractéristique du gite -->
 <?php
 include('inc/header.php');
 
