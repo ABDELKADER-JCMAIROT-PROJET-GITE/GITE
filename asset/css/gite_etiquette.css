@@ -18,3 +18,19 @@
 .underHeader {
   padding-top: 200px;
 }
+.papa{
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 180px;
+
+
+}
+.prix1{
+  height: 50px;
+  width: 100px;
+  background-color: orangered;
+}
+.prix1 p{
+  margin-left:30px;
+  margin-top: 12px;
+}
