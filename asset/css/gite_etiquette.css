@@ -1,20 +1,35 @@
 .imgSizeSquare {
-  background-image: url(../../img/carre/chambre.jpg);
-  background-size: cover;
-  height: 100%;
-  width: 100%;
+	background-image: url(../../img/carre/chambre.jpg);
+	background-size: cover;
+	height: 100%;
+	width: 100%;
 }
 .sleep p i {
-  color: var(--navColorBlue);
+	color: var(--navColorBlue);
 }
 .etiquette {
-  margin-top: 2rem;
+	margin-top: 2rem;
 }
 .btnAdmin .btn {
-  width: 100%;
-  margin-top: 5px;
-  background: var(--navColorBlue);
+	width: 100%;
+	margin-top: 5px;
+	background: var(--navColorBlue);
 }
 .underHeader {
-  padding-top: 200px;
+	padding-top: 200px;
+}
+.papa {
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-end;
+	height: 225px;
+}
+.prix1 {
+	height: 50px;
+	width: 100px;
+	background-color: orange;
+}
+.prix1 p {
+	margin-left: 30px;
+	margin-top: 12px;
 }
