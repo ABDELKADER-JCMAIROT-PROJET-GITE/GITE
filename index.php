@@ -7,33 +7,49 @@ include('inc/header.php');
     <h2 class="h2"></h2>
     <div class="container_image">
         <div class="imggrdrect test2 shadow-lg p-3 mb-5 bg-white rounded">
-            <h3>Paris</h3>
+            <h3 class="fontainebleau">Fontainebleau</h3>
             <div class="papa">
                 <div class="prix1">
-                        <p>36,99</p>
+                        <p>36,99$</p>
                 </div>
             </div>
         </div>
 
         <div class="imggrdrect test2 shadow-lg p-3 mb-5 bg-white rounded">
-            <h3>Paris</h3>
-            <p>250$</p>
+            <h3 class="paris">Paris</h3>
+            <div class="papa">
+                <div class="prix1">
+                    <p>36,99$</p>
+                </div>
+            </div>
         </div>
         <div class="imggrdrect test2 shadow-lg p-3 mb-5 bg-white rounded">
             <h3>Paris</h3>
-            <p>250$</p>
+            <div class="papa">
+                <div class="prix1">
+                    <p>36,99$</p>
+                </div>
+            </div>
         </div>
     </div>
 
     <div class="container_image">
         <div class="imggrdrect test3 shadow-lg p-3 mb-5 bg-white rounded">
             <h3>Paris</h3>
-            <p>250$</p>
+            <div class="papa">
+                <div class="prix1">
+                    <p>36,99$</p>
+                </div>
+            </div>
         </div>
 
         <div class="imggrdrect test3 shadow-lg p-3 mb-5 bg-white rounded">
             <h3>Paris</h3>
-            <p>250$</p>
+            <div class="papa">
+                <div class="prix1">
+                    <p>36,99$</p>
+                </div>
+            </div>
         </div>
     </div>
 
