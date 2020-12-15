@@ -59,7 +59,7 @@
                 <a
                   class="nav-link text-white"
                   href="https://www.booking.com/searchresults.fr.html?label=gen173nr-1FCAEoggI46AdIM1gEaE2IAQGYAQ24ARfIAQzYAQHoAQH4AQuIAgGoAgO4AvuJqP4FwAIB0gIkYWEzZGIxZTgtZTU3YS00NDg5LTk4ODYtNjFmNmQ3MmVmMGE22AIG4AIB&sid=77718e4a6ac87d7b8a7c7985707bf5eb&tmpl=searchresults&checkin_monthday=26&checkin_year_month=2020-12&checkout_monthday=27&checkout_year_month=2020-12&class_interval=1&dest_id=-1456928&dest_type=city&dr_ps=ISR&dtdisc=0&from_history=1&group_adults=2&group_children=0&highlighted_hotels=2920807&inac=0&index_postcard=0&label_click=undef&no_rooms=1&order=popularity&postcard=0&raw_dest_type=city&room1=A%2CA&sb_price_type=total&sh_position=2&shw_aparth=1&si=ai&si=ci&si=co&si=di&si=la&si=re&slp_r_match=0&srpvid=1d524743945300a0&ss_all=0&ssb=empty&sshis=0&top_ufis=1&nflt=ht_id%3D201%3B&percent_htype_apt=1&rsf="
-                  >Chambre</a
+                  >Chalet</a
                 >
               </li>
               <li class="nav-item dropdown">
