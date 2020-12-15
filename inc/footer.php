@@ -7,7 +7,7 @@
 
         <div class="footer_abdel"></div>
 <!--end footer-->
-    <script
+    <!-- <script
       src="
     https://code.jquery.com/jquery-3.5.1.slim.min.js
     "
@@ -29,7 +29,8 @@
       crossorigin="anonymous"
     ></script>
     </script>
-    <script src="https://kit.fontawesome.com/fae3248c47.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/fae3248c47.js" crossorigin="anonymous"></script> -->
+    <script src="./asset/js/bootstrap.js"></script>
   </body>
 
 </html>
