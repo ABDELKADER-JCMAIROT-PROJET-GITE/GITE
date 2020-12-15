@@ -11,6 +11,23 @@ $result = $pdo->query("SELECT * FROM gite");
 $gites = $result->fetchall();
 
 // var_dump($gites);
+//pour Delete
+if(isset($_GET['id_gite'])){
+    
+    $sqlSelect='SELECT * FROM `gite` WHERE id_gite = :id_gite';
+// variable preparatiuon de la requête
+    $query = $pdo->prepare($sqlSelect);
+// // execution de la requête
+    $query->bindParam(':id_gite',$_GET['id_gite'],PDO::PARAM_INT);
+    $query->execute();
+    $produit=$query->fetch();
+
+    $req = $pdo->exec("DELETE FROM gite WHERE id_gite = $_GET[id_gite]");
+
+    // header('Location: index_admin.php');
+}
+
+
 
 ?>
 
@@ -33,10 +50,11 @@ $gites = $result->fetchall();
                     </div>
                 </div>
             <div class="col-md-2">
-                <div class="card-body btnAdmin">
+                <div class="card-body btnAdmin"> 
                     <button type="button" class="btn btn-primary">Reserver</button>
                     <button type="button" class="btn btn-primary">Modifier</button>
-                    <button type="button" class="btn btn-primary">Supprimer</button>
+                    <!-- <button type="button" class="btn btn-primary">Supprimer</button> -->
+                    <a href="index_admin.php?id_gite=<?= $id_gite; ?>" class="btn btn-primary">Supprimer</a>
                 </div>
             </div>
         </div>
