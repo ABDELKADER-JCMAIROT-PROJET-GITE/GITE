@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="./asset/css/nav.css" />
     <link rel="stylesheet" href="./asset/css/variable.css" />
     <link rel="stylesheet" href="./asset/css/log_admin.css" />
-    <title>Accueil</title>
+    <title>AbJc.com</title>
   </head>
   <body>
     <header>
