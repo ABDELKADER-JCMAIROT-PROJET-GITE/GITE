@@ -1,11 +1,10 @@
 <?php
-
 require_once('app/database.class.php');
 $pdo=getPdo();
 //gestion des dowload des images
 if (!empty($_POST)){
     
-    //importation image_rect1 de 
+    //importation image_rect1 
     $file_name = $_FILES['image_rect1']['name'];//atteindre le name 
     $file_type = strrchr($file_name, ".");//pour check .png etc...
     $file_tmp_name = $_FILES['image_rect1']['tmp_name'];//fichier le chemin tempo
@@ -13,7 +12,7 @@ if (!empty($_POST)){
     $type_autorisees = array('.jpg','.gif','.png','.jpeg');//fichier que l'on controle
     copy($file_tmp_name,$file_img);//prend dans le dossier tempo pour le placer dans le dossier img
     
-    // importation image_rect2 de 
+    // importation image_rect2 
     $file_name2 = $_FILES['image_rect2']['name'];//atteindre le name 
     $file_type2 = strrchr($file_name2, ".");//pour check .png etc...
     $file_tmp_name2 = $_FILES['image_rect2']['tmp_name'];//fichier le chemin tempo
@@ -21,7 +20,7 @@ if (!empty($_POST)){
     $type_autorisees = array('.jpg','.gif','.png','.jpeg');//fichier que l'on controle
     copy($file_tmp_name2,$file_img2);//prend dans le dossier tempo pour le placer dans le dossier img
 
-    // importation image_rect3 de 
+    // importation image_rect3 
     $file_name3 = $_FILES['image_rect3']['name'];//atteindre le name 
     $file_type3 = strrchr($file_name3, ".");//pour check .png etc...
     $file_tmp_name3 = $_FILES['image_rect3']['tmp_name'];//fichier le chemin tempo
@@ -29,7 +28,7 @@ if (!empty($_POST)){
     $type_autorisees = array('.jpg','.gif','.png','.jpeg');//fichier que l'on controle
     copy($file_tmp_name3,$file_img3);//prend dans le dossier tempo pour le placer dans le dossier img
     
-    // importation image_carre de 
+    // importation image_carre
     $file_name_carre = $_FILES['image_carre']['name'];//atteindre le name 
     $file_type_carre = strrchr($file_name_carre, ".");//pour check .png etc...
     $file_tmp_name_carre = $_FILES['image_carre']['tmp_name'];//fichier le chemin tempo
