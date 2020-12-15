@@ -2,7 +2,16 @@
 même s'il n'y a plus de disponibilitée
 -->
 <?php
+require_once('app/database.class.php');
 include('inc/header.php');
+// appel à la BBD
+$pdo=getPdo();
+
+$result = $pdo->query("SELECT * FROM gite");
+$gite = $result->fetchall();
+
+var_dump($gite);
+
 ?>
 
 <!-- formulaire de connexion pour l'accés au dashboard de l'admin -->
