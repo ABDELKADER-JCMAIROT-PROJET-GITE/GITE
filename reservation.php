@@ -35,6 +35,8 @@ include('inc/header.php');
         <i class="fas fa-parking"> Parking | </i> <i class="fas fa-paw"> Animaux domestiques admis | </i>
         <i class="fas fa-smoking-ban"> Chambres non-fumeurs | </i>
         <i class="fas fa-glass-cheers"> Bar</i>
+        <hr><h3 class="prix-nuit">93€/Nuit | Disponibilité a partir du 17/12/2020</h3>
+        <hr>
     </div>
     <div class="d-grid gap-2">
         <button class="btn btn-warning reserver" type="submit">Reserver</button>
