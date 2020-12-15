@@ -6,7 +6,8 @@ include('inc/header.php');
     <h1>Les meilleures escapades à la plage</h1>
     <h2 class="h2"></h2>
     <div class="container_image">
-        <div class="imggrdrect test2 shadow-lg p-3 mb-5 bg-white rounded">
+        <div class="imggrdrect test2 shadow-lg p-3 mb-5 bg-white rounded " style="	background-image: url(img/carre/fontainebleau.jpg);
+">
             <h3 class="fontainebleau">Fontainebleau</h3>
             <div class="papa">
                 <div class="prix1">
@@ -24,7 +25,7 @@ include('inc/header.php');
             </div>
         </div>
         <div class="imggrdrect test2 shadow-lg p-3 mb-5 bg-white rounded">
-            <h3>Paris</h3>
+            <h3 class="alpes">Les deux alpes</h3>
             <div class="papa">
                 <div class="prix1">
                     <p>36,99$</p>
@@ -35,7 +36,7 @@ include('inc/header.php');
 
     <div class="container_image">
         <div class="imggrdrect test3 shadow-lg p-3 mb-5 bg-white rounded">
-            <h3>Paris</h3>
+            <h3 class="marseille">Marseille</h3>
             <div class="papa">
                 <div class="prix1">
                     <p>36,99$</p>
@@ -44,7 +45,7 @@ include('inc/header.php');
         </div>
 
         <div class="imggrdrect test3 shadow-lg p-3 mb-5 bg-white rounded">
-            <h3>Paris</h3>
+            <h3 class="lyon">Lyon</h3>
             <div class="papa">
                 <div class="prix1">
                     <p>36,99$</p>
@@ -58,8 +59,8 @@ include('inc/header.php');
             <div
                     class="imggrdrect test4 shadow-lg p-3 mb-5 bg-white rounded"
             ></div>
-            <h2>hotelgit</h2>
-            <p>Lorem ipsum dolor sit amet.</p>
+            <h2>hotel</h2>
+            <p>744,635 hôtels</p>
         </div>
         <div class="">
             <div

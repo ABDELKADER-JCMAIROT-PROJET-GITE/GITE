@@ -4,6 +4,7 @@
 	height: 100%;
 	width: 100%;
 }
+
 .sleep p i {
 	color: var(--navColorBlue);
 }
@@ -33,3 +34,19 @@
 	margin-left: 30px;
 	margin-top: 12px;
 }
+.fontainebleau{
+  font-family: "Bodoni MT Poster Compressed";
+}
+.paris{
+  font-family: "Bodoni MT Poster Compressed";
+}
+.alpes{
+  font-family: "Bodoni MT Poster Compressed";
+}
+.marseille{
+  font-family: "Bodoni MT Poster Compressed";
+}
+.lyon{
+  font-family: "Bodoni MT Poster Compressed";
+}
+
