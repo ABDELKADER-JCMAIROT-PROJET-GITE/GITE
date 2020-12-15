@@ -97,7 +97,7 @@
 - [ ] Spécificités (piscine, nbr salle de bain, jardin, etc...)
 - [ ] Nombre de couchages
 - [ ] Un prix
-- [ ] Disponibilité
+- [ ] Disponibilité (intégré dans le formulaire de reservation)
 - [ ] Formulaire de réservation (envoie de mail sur codeur.fr pour la reservation.)
 
 **Formulaire de Recherche**
