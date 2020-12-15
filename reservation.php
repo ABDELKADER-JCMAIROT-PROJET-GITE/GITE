@@ -2,8 +2,8 @@
 include('inc/header.php');
 ?>
     <div class="reservation shadow p-3 mb-5 bg-white rounded"><h1>Reservation</h1></div>
-<div><h2 class="ibis">ibis Château de Fontainebleau</h2>
-<span>18 rue de Ferrare, 77300 Fontainebleau, France</span></div>
+    <div><h2 class="ibis">ibis Château de Fontainebleau</h2>
+        <span>18 rue de Ferrare, 77300 Fontainebleau, France</span></div>
     <!--        debut entet img-->
     <!--        div papa-->
     <div class="photosreservation shadow-lg p-3 mb-5 bg-light rounded">
@@ -35,7 +35,10 @@ include('inc/header.php');
         <i class="fas fa-parking"> Parking | </i> <i class="fas fa-paw"> Animaux domestiques admis | </i>
         <i class="fas fa-smoking-ban"> Chambres non-fumeurs | </i>
         <i class="fas fa-glass-cheers"> Bar</i>
-        <hr><h3 class="prix-nuit">93€/Nuit | Disponibilité a partir du 17/12/2020</h3>
+        <hr>
+        <h3 class="prix-nuit">93€/Nuit</h3>
+        <hr>
+        <h3>Disponibilité a partir du 17/12/2020</h3>
         <hr>
     </div>
     <div class="d-grid gap-2">
