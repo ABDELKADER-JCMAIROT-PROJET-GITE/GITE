@@ -68,7 +68,7 @@ include('inc/header.php');
 <div class="container formAdmin">
     <form method="POST" enctype="multipart/form-data">
         <div class="flexFormAdmin">
-            <div class="col-6">
+            <div class="col-5">
                 <label class="form-label ">Nom</label>
                 <input type="text" class="form-control" name="name" > 
                 <label class="form-label">Localisation</label>
@@ -78,7 +78,7 @@ include('inc/header.php');
                 <label class="form-label">Nombre de couchages</label>
                 <input type="text" class="form-control" name="nbr_couchage">
             </div> 
-            <div class="col-6">
+            <div class="col-5">
                 <label class="form-label ">Categorie</label>
                 <select class="custom-select mr-sm-2" name="categorie" id="inlineFormCustomSelect">
 					<option>Hotel</option>
@@ -100,18 +100,18 @@ include('inc/header.php');
                 <input type="date" id="dateFin" name="date_fin" max="2025-12-31"> -->
 
             <!-- </div> -->
-            <div class="flexFormAdmin">
+            <div class="flexFormAdmin downloadFile">
                 <div>
-                    <label for="exampleFormControlFile1">Image rectangle1</label>
-                    <input type="file" class="form-control-file" name="image_rect1">
-                    <label for="exampleFormControlFile1">Image rectangle2</label>
-                    <input type="file" class="form-control-file" name="image_rect2">
+                    <label for="exampleFormControlFile1">Image rectangle1</label><br>
+                    <input type="file" class="form-control-file" name="image_rect1"><br>
+                    <label for="exampleFormControlFile1">Image rectangle2</label><br>
+                    <input type="file" class="form-control-file" name="image_rect2"><br>
                 </div>
                 <div>
-                    <label for="exampleFormControlFile1">Image rectangle3</label>
-                    <input type="file" class="form-control-file" name="image_rect3">
-                    <label for="exampleFormControlFile1">Image carre</label>
-                    <input type="file" class="form-control-file" name="image_carre">
+                    <label for="exampleFormControlFile1">Image rectangle3</label><br>
+                    <input type="file" class="form-control-file" name="image_rect3"><br>
+                    <label for="exampleFormControlFile1">Image carre</label><br>
+                    <input type="file" class="form-control-file" name="image_carre"><br>
                 </div>
             </div> 
             

@@ -10,11 +10,12 @@
 }
 .formAdmin {
   margin: 50px;
+  height: 800px;
 }
 .formAdmin .btn {
   margin-top: 50px;
   width: 100%;
 }
 .downloadFile {
-  margin: 10px;
+  margin-top: 50px;
 }

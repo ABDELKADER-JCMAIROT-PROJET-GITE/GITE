@@ -23,7 +23,6 @@ if(isset($_GET['id_gite'])){
     $produit=$query->fetch();
 
     $req = $pdo->exec("DELETE FROM gite WHERE id_gite = $_GET[id_gite]");
-
     // header('Location: index_admin.php');
 }
 
@@ -33,6 +32,7 @@ if(isset($_GET['id_gite'])){
 
 <!-- formulaire de connexion pour l'accés au dashboard de l'admin -->
 <!-- debut foreach -->
+
 <?php foreach ($gites as $gite): extract($gite) ?> 
 <div class="etiquette">
     <div class="card mb-3" style="max-width: 100%;">
@@ -62,6 +62,7 @@ if(isset($_GET['id_gite'])){
     </div>
 </div>
 <?php endforeach ?>
+
 <!-- fin foreach -->
 
 <!-- --------- -->
