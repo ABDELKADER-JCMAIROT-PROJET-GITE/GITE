@@ -68,3 +68,14 @@
   margin-left: 50px;
   font-size: 12px;
 }
+.h1admin{
+  text-align: center;
+  margin-top: 20px;
+}
+.suiteluxeadmin{
+  height: 200px;
+  width: 200px;
+}
+.principale{
+  display: flex;
+}

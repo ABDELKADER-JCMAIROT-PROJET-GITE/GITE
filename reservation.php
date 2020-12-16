@@ -2,7 +2,7 @@
 include('inc/header.php');
 ?>
     <div class="reservation shadow p-3 mb-5 bg-white rounded"><h1>Reservation</h1></div>
-    <div><h2 class="ibis">ibis Château de Fontainebleau</h2>
+    <div><h2 class="ibis">Ibis Château de Fontainebleau</h2>
         <span>18 rue de Ferrare, 77300 Fontainebleau, France</span></div>
     <!--        debut entet img-->
     <!--        div papa-->

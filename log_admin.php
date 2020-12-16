@@ -1,3 +1,14 @@
+<?php
+require_once('src/login.php');
+
+
+$login = new Login($_POST);
+
+if ($login->logged) {
+    header('location:index.php');
+}
+
+?>
 <!DOCTYPE html>
 <html lang="fr">
   <head>
@@ -14,26 +25,25 @@
     <link rel="stylesheet" href="asset/css/nav.css" />
     <link rel="stylesheet" href="asset/css/log_admin.css" />
     <meta charset="UTF-8" />
-    <title>Accueil</title>
+    <title>AbJc.com</title>
   </head>
   <body>
     <div class="container">
         <div class="centerlog">
-            <form>
-            <div class="form-group">
-                <label for="exampleInputEmail1">Email address</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-            </div>
-            <div class="form-group">
-                <label for="exampleInputPassword1">Password</label>
-                <input type="password" class="form-control" id="exampleInputPassword1">
-            </div>
-            <div class="form-group form-check">
-                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                <label class="form-check-label" for="exampleCheck1">Check me out</label>
-            </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <div><h1 class="connecter">Connecter</h1></div>
+            <form action="log_admin.php" method="post">
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" name="email" id="email" aria-describedby="emailHelp">
+                    <small id="email" class="form-text text-muted">Nous ne partagerons jamais votre e-mail avec personne
+                        d'autre.</small>
+                </div>
+                <div class="form-group">
+                    <label for="password">Mot de passe</label>
+                    <input type="password" class="form-control" name="password" id="password">
+                </div>
+
+                <button type="submit" class="btn btn-dark">Acceder</button>
             </form>
         </div>
     </div>
