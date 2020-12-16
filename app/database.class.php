@@ -8,7 +8,7 @@
  * @return PDO
  */
 
-function getConnexion(): PDO
+function getpdo(): PDO
 {
     $pdo = new PDO('mysql:host=localhost;dbname=projet_gite', 'root', '', array(
         PDO::ATTR_ERRMODE => PDO::ERRMODE_WARNING,

@@ -11,7 +11,8 @@ class Login
      * Login constructor.
      * @param $post
      */
-    public function __construct($post)
+    public function
+    __construct($post)
     {
         if (isset($post['email']) && isset($post['password']) && $this->isLogged($post['email'],$post['password'])){
           $this->logged = true;

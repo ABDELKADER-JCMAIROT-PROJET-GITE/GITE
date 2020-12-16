@@ -5,7 +5,7 @@ require_once('src/login.php');
 $login = new Login($_POST);
 
 if ($login->logged) {
-    header('location:index.php');
+    header('location:index_admin.php');
 }
 
 ?>
