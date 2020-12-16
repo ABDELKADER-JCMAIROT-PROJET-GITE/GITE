@@ -45,8 +45,8 @@
                     <li class="nav-item active">
                         <a
                                 class="nav-link text-white"
-                                href="http://localhost:63342/gite/index.html"
-                        >Accueil</a
+                                href="./index.php"
+                        >Accueil</a>
 
                     </li>
                     <li class="nav-item">

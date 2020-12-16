@@ -44,6 +44,7 @@
 - https://vos-formations.com/apprenant/
 - https://sql.sh/
 - https://www.youtube.com/watch?v=weE2adYHPG0&ab_channel=Grafikart.fr
+- https://github.com/Melissa-Fruit/crud/blob/main/config/database.php
 
 ## Description du projet :
 
