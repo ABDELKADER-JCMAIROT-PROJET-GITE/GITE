@@ -53,7 +53,7 @@ if(isset($_GET['id_gite'])){
                 <div class="card-body btnAdmin"> 
                     <button type="button" class="btn btn-primary">Reserver</button>
                     <!-- <button type="button" class="btn btn-primary">Modifier</button> -->
-                    <a href="form_updategite_admin.php?id_gite=<?= $id_gite ?>" class="btn btn-dark btn-block">Modifier</a>
+                    <a href="form_updategite_admin.php?id_gite=<?= $id_gite ?>" class="btn btn-primary">Modifier</a>
                     <!-- <button type="button" class="btn btn-primary">Supprimer</button> -->
                     <a href="index_admin.php?id_gite=<?= $id_gite ?>" class="btn btn-primary">Supprimer</a>
                 </div>

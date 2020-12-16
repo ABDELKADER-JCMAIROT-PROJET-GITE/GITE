@@ -98,7 +98,7 @@
               </h2>
             </h1>
             <form class="form-inline">
-              <div class="form-group">
+              <div class="form-group searchForm">
                 <input
                   type="text"
                   class="form-control mr-3"
