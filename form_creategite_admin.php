@@ -1,10 +1,18 @@
 <?php
 require_once('libraries/database.php');
 require_once('libraries/imagedload.php');
+require_once('app/gite.class.php');
 $pdo=getPdo();
+
+$gite=new Gite($pdo);
+
 //gestion des dowload des images
-if (!empty($_POST)){
+// if (!empty($_POST)){
+if ($_POST){ 
     
+    
+
+
     //importation image_rect1 
     $file_name = $_FILES['image_rect_1']['name'];//atteindre le name 
     $file_type = strrchr($file_name, ".");//pour check .png etc...
@@ -38,30 +46,43 @@ if (!empty($_POST)){
     copy($file_tmp_name_carre,$file_img_carre);//prend dans le dossier tempo pour le placer dans le dossier img
 
   
-    $gite = $pdo->prepare(
+    $gite->name=$_POST['name'];
+    $gite->image_rect_1=$_POST['image_rect_1'];
+    $gite->image_rect_2=$_POST['image_rect_2'];
+    $gite->image_rect_3=$_POST['image_rect_3'];
+    $gite->image_carre=$_POST['image_carre'];
+    $gite->localisation=$_POST['localisation'];
+    $gite->spec=$_POST['spec'];
+    $gite->nbr_couchage=$_POST['nbr_couchage'];
+    $gite->prix=$_POST['prix'];
+    $gite->categorie=$_POST['categorie'];
+
+
+
+//     $gite = $pdo->prepare(
         
-        'INSERT INTO gite (name, image_rect_1, image_rect_2, image_rect_3, localisation, description, spec, nbr_couchage, prix, image_carre, categorie)
-        VALUES (:name, :image_rect_1, :image_rect_2, :image_rect_3, :localisation, :description, :spec, :nbr_couchage, :prix, :image_carre, :categorie)'
-        );
+//         'INSERT INTO gite (name, image_rect_1, image_rect_2, image_rect_3, localisation, description, spec, nbr_couchage, prix, image_carre, categorie)
+//         VALUES (:name, :image_rect_1, :image_rect_2, :image_rect_3, :localisation, :description, :spec, :nbr_couchage, :prix, :image_carre, :categorie)'
+//         );
 
 
-// binParam str
-    $gite->bindParam(':name', $_POST['name'], PDO::PARAM_STR);
-    $gite->bindParam(':localisation', $_POST['localisation'], PDO::PARAM_STR);
-    $gite->bindParam(':description', $_POST['description'], PDO::PARAM_STR);
-    $gite->bindParam(':spec', $_POST['spec'], PDO::PARAM_STR);
-    $gite->bindParam(':nbr_couchage', $_POST['nbr_couchage'], PDO::PARAM_INT);
-    $gite->bindParam(':prix', $_POST['prix'], PDO::PARAM_INT);
-    $gite->bindParam(':categorie', $_POST['categorie'], PDO::PARAM_STR);
+// // binParam str
+//     $gite->bindParam(':name', $_POST['name'], PDO::PARAM_STR);
+//     $gite->bindParam(':localisation', $_POST['localisation'], PDO::PARAM_STR);
+//     $gite->bindParam(':description', $_POST['description'], PDO::PARAM_STR);
+//     $gite->bindParam(':spec', $_POST['spec'], PDO::PARAM_STR);
+//     $gite->bindParam(':nbr_couchage', $_POST['nbr_couchage'], PDO::PARAM_INT);
+//     $gite->bindParam(':prix', $_POST['prix'], PDO::PARAM_INT);
+//     $gite->bindParam(':categorie', $_POST['categorie'], PDO::PARAM_STR);
    
 
-// bind des de l'image et de la doc : file
-    // $gite->bindParam(':image_rect_1', $img , PDO::PARAM_STR);
-    $gite->bindParam(':image_rect_1', $file_img , PDO::PARAM_STR);
-    $gite->bindParam(':image_rect_2', $file_img2 , PDO::PARAM_STR);
-    $gite->bindParam(':image_rect_3', $file_img3 , PDO::PARAM_STR);
-    $gite->bindParam(':image_carre', $file_img_carre , PDO::PARAM_STR);
-    $gite->execute();
+// // bind des de l'image et de la doc : file
+//     // $gite->bindParam(':image_rect_1', $img , PDO::PARAM_STR);
+//     $gite->bindParam(':image_rect_1', $file_img , PDO::PARAM_STR);
+//     $gite->bindParam(':image_rect_2', $file_img2 , PDO::PARAM_STR);
+//     $gite->bindParam(':image_rect_3', $file_img3 , PDO::PARAM_STR);
+//     $gite->bindParam(':image_carre', $file_img_carre , PDO::PARAM_STR);
+//     $gite->execute();
     
 }
 // var_dump($gite);
