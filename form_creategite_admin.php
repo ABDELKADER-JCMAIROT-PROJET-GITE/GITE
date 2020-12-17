@@ -5,9 +5,6 @@ $pdo=getPdo();
 //gestion des dowload des images
 if (!empty($_POST)){
     
-
-   
-    
     //importation image_rect1 
     $file_name = $_FILES['image_rect_1']['name'];//atteindre le name 
     $file_type = strrchr($file_name, ".");//pour check .png etc...
@@ -59,8 +56,8 @@ if (!empty($_POST)){
    
 
 // bind des de l'image et de la doc : file
-    $gite->bindParam(':image_rect_1', $img , PDO::PARAM_STR);
-    // $gite->bindParam(':image_rect_1', $file_img , PDO::PARAM_STR);
+    // $gite->bindParam(':image_rect_1', $img , PDO::PARAM_STR);
+    $gite->bindParam(':image_rect_1', $file_img , PDO::PARAM_STR);
     $gite->bindParam(':image_rect_2', $file_img2 , PDO::PARAM_STR);
     $gite->bindParam(':image_rect_3', $file_img3 , PDO::PARAM_STR);
     $gite->bindParam(':image_carre', $file_img_carre , PDO::PARAM_STR);
