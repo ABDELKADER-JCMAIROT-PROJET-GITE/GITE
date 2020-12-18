@@ -11,9 +11,16 @@
 .etiquette {
   margin-top: 2rem;
 }
+.btnAdmin {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  height: 100%;
+}
 .btnAdmin .btn {
-  width: 100%;
+  width: 100px;
   margin-top: 5px;
+  margin-left: 5px;
   background: var(--navColorBlue);
 }
 .underHeader {
@@ -35,43 +42,37 @@
   margin-top: 12px;
   color: black;
 }
-.fontainebleau{
+.fontainebleau {
   text-decoration: none;
   font-family: "Bodoni MT Poster Compressed";
   color: white;
   text-shadow: #333 1px 0 10px;
-
 }
-.paris{
+.paris {
   font-family: "Bodoni MT Poster Compressed";
   text-shadow: #333 1px 0 10px;
   text-decoration: none;
   color: black;
-
 }
-.alpes{
+.alpes {
   font-family: "Bodoni MT Poster Compressed";
   text-shadow: #333 1px 0 10px;
   text-decoration: none;
   color: white;
-
 }
-.marseille{
+.marseille {
   font-family: "Bodoni MT Poster Compressed";
   text-shadow: #333 1px 0 10px;
   color: white;
   text-decoration: none;
-
 }
-.lyon{
+.lyon {
   font-family: "Bodoni MT Poster Compressed";
   color: white;
   text-shadow: #333 1px 0 10px;
   text-decoration: none;
-
 }
-.no-decoration{
+.no-decoration {
   text-decoration: none;
   color: black;
 }
-

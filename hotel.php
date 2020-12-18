@@ -1,8 +1,5 @@
-<!-- quand on fait une recherche pour l'admin la totalité des gites sont visible
-même s'il n'y a plus de disponibilitée
--->
 <?php
-require_once('app/database.class.php');
+require_once('libraries/database.php');
 include('inc/header.php');
 // appel à la BBD
 $pdo=getPdo();

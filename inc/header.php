@@ -45,13 +45,8 @@
                     <li class="nav-item active">
                         <a
                                 class="nav-link text-white"
-<<<<<<< HEAD
                                 href="index.php"
-                        >Accueil</a
-=======
-                                href="./index.php"
                         >Accueil</a>
->>>>>>> 830b1aa7c291b8e822ce70bb726201a1cd66f18c
 
                     </li>
                     <li class="nav-item">
