@@ -1,61 +1,7 @@
 <!-- formulaire pour update le gite  modifier -->
 <?php
-require_once('app/database.class.php');
+require_once('libraries/database.php');
 $pdo=getPdo();
-
-// update d'un produit
-
-// $modifGite=$pdo->prepare('SELECT * FROM gite WHERE id_gite = :id');
-// $modifGite->bindValue(':id',$_GET['gite'],PDO::PARAM_INT);
-// $execModifGite = $modifGite->execute();
-
-// $giteModif=$modifGite->fetch();
-// var_dump($giteModif);
-// if (!empty($_POST)){
-// $giteUpdate = $pdo->prepare(
-//     'UPDATE gite SET 
-//     name = :name, 
-//     image_rect_1 = :image_rect_1, 
-//     image_rect_2 = :image_rect_2, 
-//     image_rect_3 = :image_rect_3, 
-//     localisation = :localisation, 
-//     description = :description, 
-//     spec = :spec, 
-//     nbr_couchage = :nbr_couchage, 
-//     prix = :prix, 
-//     -- image_carre = :image_carre, 
-//     categorie = :categorie 
-//     where id_gite=:id
-//     LIMIT 1'
-// 	);
-
-
-// $giteUpdate->bindValue(':id',$_POST['giteUpdate'],PDO::PARAM_INT);
-// $giteUpdate->bindValue(':name', $_POST['name'], PDO::PARAM_STR);
-// $giteUpdate->bindValue(':localisation', $_POST['localisation'], PDO::PARAM_STR);
-// $giteUpdate->bindValue(':description', $_POST['description'], PDO::PARAM_STR);
-// $giteUpdate->bindValue(':spec', $_POST['spec'], PDO::PARAM_STR);
-// $giteUpdate->bindValue(':nbr_couchage', $_POST['nbr_couchage'], PDO::PARAM_INT);
-// $giteUpdate->bindValue(':prix', $_POST['prix'], PDO::PARAM_INT);
-// $giteUpdate->bindValue(':categorie', $_POST['categorie'], PDO::PARAM_STR);
-
-
-// // bind des de l'image et de la doc : file
-// $giteUpdate->bindValue(':image_rect_1', $file_img , PDO::PARAM_STR);
-// $giteUpdate->bindValue(':image_rect_2', $file_img2 , PDO::PARAM_STR);
-// $giteUpdate->bindValue(':image_rect_3', $file_img3 , PDO::PARAM_STR);
-// // $giteUpdate->bindValue(':image_carre', $file_img_carre , PDO::PARAM_STR);
-
-// $executeUpdate= $giteUpdate->execute();
-// if($executeUpdate){
-// 	echo 'Le produit a été mis à jour';
-// }else{
-// 	echo 'Echec de la mise à jour';
-// }
-// }
-
-
-
 
 //variable de la requete sql
 $sqlSelect='SELECT * FROM gite WHERE id_gite = :id_gite';
@@ -119,26 +65,23 @@ if(isset($_POST['id_gite'])){
     $type_autorisees = array('.jpg','.gif','.png','.jpeg');//fichier que l'on controle
     copy($file_tmp_name_carre,$file_img_carre);//prend dans le dossier tempo pour le placer dans le dossier img
 
-
-
-
-
 	$req = $pdo->prepare('UPDATE gite SET name = :name, image_rect_1 = :image_rect_1, image_rect_2 = :image_rect_2, image_rect_3 = :image_rect_3, localisation = :localisation, description = :description, spec = :spec, nbr_couchage = :nbr_couchage, prix = :prix, image_carre = :image_carre, categorie = :categorie where id_gite=:id_gite');
-	// $req->execute(array(
+
 
         $req->bindValue(':id_gite', $_POST['id_gite'],PDO::PARAM_INT);
         $req->bindValue(':name' , $_POST['name'],PDO::PARAM_STR);
-        $req->bindValue(':image_rect_1',  $file_img,PDO::PARAM_STR);
-        $req->bindValue(':image_rect_2', $file_img2,PDO::PARAM_STR);
-        $req->bindValue(':image_rect_3', $file_img3,PDO::PARAM_STR);
-        $req->bindValue(':image_carre', $file_img_carre,PDO::PARAM_STR);
         $req->bindValue(':localisation', $_POST['localisation'],PDO::PARAM_STR);
         $req->bindValue(':description', $_POST['description'],PDO::PARAM_STR);
         $req->bindValue(':spec', $_POST['spec'],PDO::PARAM_STR);
         $req->bindValue(':nbr_couchage', $_POST['nbr_couchage'],PDO::PARAM_INT);
         $req->bindValue(':prix', $_POST['prix'],PDO::PARAM_INT);
         $req->bindValue(':categorie', $_POST['categorie'],PDO::PARAM_STR);
-       
+       //recup les image download
+        $req->bindValue(':image_rect_1',  $file_img,PDO::PARAM_STR);
+        $req->bindValue(':image_rect_2', $file_img2,PDO::PARAM_STR);
+        $req->bindValue(':image_rect_3', $file_img3,PDO::PARAM_STR);
+        $req->bindValue(':image_carre', $file_img_carre,PDO::PARAM_STR);
+
         $executeUpdate=$req->execute();
         if($executeUpdate){
             echo 'Le produit a été mis à jour';
@@ -147,9 +90,9 @@ if(isset($_POST['id_gite'])){
         }
         header('Location: index_admin.php');
 }
-//$gite->bindParam(':image_rect_1', $file_img , PDO::PARAM_STR);
 
-// var_dump($gite);
+
+
 include('inc/header.php');
 ?>
 <div class="container formAdmin">
