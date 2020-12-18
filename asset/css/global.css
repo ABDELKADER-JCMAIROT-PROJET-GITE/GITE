@@ -57,7 +57,7 @@
 
 .reservation {
   text-align: center;
-  margin-top: 20px;
+  margin-top: 40px;
 }
 .hotel {
   font-size: 20px;
@@ -78,4 +78,27 @@
 }
 .principale{
   display: flex;
+}
+.acceder{
+  margin-top: 20px;
+  width: 665px;
+  height: 50px;
+}
+.connexion{
+  margin-top: 280px;
+}
+.titre-index{
+  text-align: center;
+  margin-top: 40px;
+}
+.container_image a{
+  text-decoration: none;
+}
+
+.taille-form{
+  height: 170px;
+}
+.contact{
+  text-align: center;
+  color: white;
 }

@@ -27,8 +27,8 @@ if ($login->logged) {
     <meta charset="UTF-8" />
     <title>AbJc.com</title>
   </head>
-  <body>
-    <div class="container">
+  <body class="fond">
+    <div class="container connexion shadow-lg p-3 mb-5 bg-white rounded">
         <div class="centerlog">
             <div><h1 class="connecter">Connecter</h1></div>
             <form action="log_admin.php" method="post">
@@ -43,7 +43,7 @@ if ($login->logged) {
                     <input type="password" class="form-control" name="password" id="password">
                 </div>
 
-                <button type="submit" class="btn btn-dark">Acceder</button>
+                <button type="submit" class="btn btn-dark acceder">Acceder</button>
             </form>
         </div>
     </div>

@@ -1,13 +1,17 @@
-<?php
-?>
+
 <!-- fin de div container  -->
     </div>
 
 <!--start footer-->
 
-        <div class="footer_abdel"></div>
+        <div class="footer_abdel">
+            <h3 class="contact">Contact</h3>
+            <p class="contact">Par tel. 07.83.25.35.54 <br> Par Mail : a.aouini@codeur.online
+            </p>
+
+        </div>
 <!--end footer-->
-    <!-- <script
+     <script
       src="
     https://code.jquery.com/jquery-3.5.1.slim.min.js
     "
@@ -29,7 +33,7 @@
       crossorigin="anonymous"
     ></script>
     </script>
-    <script src="https://kit.fontawesome.com/fae3248c47.js" crossorigin="anonymous"></script> -->
+    <script src="https://kit.fontawesome.com/fae3248c47.js" crossorigin="anonymous"></script>
     <script src="./asset/js/bootstrap.js"></script>
   </body>
 

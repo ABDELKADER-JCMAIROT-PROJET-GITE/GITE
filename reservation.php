@@ -1,9 +1,9 @@
 <?php
 include('inc/header.php');
 ?>
-    <div class="reservation shadow p-3 mb-5 bg-white rounded"><h1>Reservation</h1></div>
-    <div><h2 class="ibis">Ibis Château de Fontainebleau</h2>
-        <span>18 rue de Ferrare, 77300 Fontainebleau, France</span></div>
+    <div class="reservation shadow p-3 mb-5 bg-white rounded"><h1>Ibis Château de Fontainebleau</h1>
+    <span>18 rue de Ferrare, 77300 Fontainebleau, France</span></div>
+    <div><h2 class="ibis"></h2>
     <!--        debut entet img-->
     <!--        div papa-->
     <div class="photosreservation shadow-lg p-3 mb-5 bg-light rounded">
@@ -49,5 +49,5 @@ include('inc/header.php');
     <!--        fin entete img -->
 
 
-    <!--</div>-->
+    </div>
 <?php include('inc/footer.php'); ?>

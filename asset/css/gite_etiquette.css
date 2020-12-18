@@ -33,20 +33,45 @@
 .prix1 p {
   margin-left: 30px;
   margin-top: 12px;
+  color: black;
 }
 .fontainebleau{
+  text-decoration: none;
   font-family: "Bodoni MT Poster Compressed";
+  color: white;
+  text-shadow: #333 1px 0 10px;
+
 }
 .paris{
   font-family: "Bodoni MT Poster Compressed";
+  text-shadow: #333 1px 0 10px;
+  text-decoration: none;
+  color: black;
+
 }
 .alpes{
   font-family: "Bodoni MT Poster Compressed";
+  text-shadow: #333 1px 0 10px;
+  text-decoration: none;
+  color: white;
+
 }
 .marseille{
   font-family: "Bodoni MT Poster Compressed";
+  text-shadow: #333 1px 0 10px;
+  color: white;
+  text-decoration: none;
+
 }
 .lyon{
   font-family: "Bodoni MT Poster Compressed";
+  color: white;
+  text-shadow: #333 1px 0 10px;
+  text-decoration: none;
+
+}
+.no-decoration{
+  text-decoration: none;
+  color: black;
 }
 
