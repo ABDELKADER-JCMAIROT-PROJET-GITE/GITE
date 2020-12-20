@@ -4,27 +4,8 @@ include('inc/header.php');
 // appel à la BBD
 $pdo=getPdo();
 //requête  pour le Read
-$result = $pdo->query("SELECT * FROM gite");
-$gites = $result->fetchall();
-
-// var_dump($gites);
-//pour Delete
-if(isset($_GET['id_gite'])){
-
-    $sqlSelect='SELECT * FROM `gite` WHERE id_gite = :id_gite';
-// variable preparatiuon de la requête
-    $query = $pdo->prepare($sqlSelect);
-// // execution de la requête
-    $query->bindParam(':id_gite',$_GET['id_gite'],PDO::PARAM_INT);
-    $query->execute();
-    $produit=$query->fetch();
-
-    $req = $pdo->exec("DELETE FROM gite WHERE id_gite = $_GET[id_gite]");
-    // header('Location: index_admin.php');
-}
-
-
-
+$result = $pdo->query("SELECT * FROM gite WHERE categorie LIKE 'hotel' ORDER BY id_gite DESC ");
+$gites = $result->fetchAll();
 ?>
 
 <!-- formulaire de connexion pour l'accés au dashboard de l'admin -->
