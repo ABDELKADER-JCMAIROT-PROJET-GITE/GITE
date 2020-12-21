@@ -8,7 +8,7 @@ include('inc/header.php');
 $pdo=getPdo();
 
 //requête  pour le Read
-$result = $pdo->query("SELECT * FROM gite WHERE categorie LIKE 'fontainebleau' ORDER BY id_gite DESC ");
+$result = $pdo->query("SELECT * FROM gite WHERE localisation LIKE 'fontainebleau' ORDER BY id_gite DESC ");
 $gites = $result->fetchAll();
 
 // var_dump($gites);
