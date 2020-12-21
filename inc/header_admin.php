@@ -1,11 +1,3 @@
-<?php
-require_once('libraries/database.php');
-//connexion base de donnée 
-$pdo=getPdo();
-//implémentation du module de recherche
-
-?>
-
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -90,43 +82,7 @@ $pdo=getPdo();
     </nav>
     <!--    end navbar-->
 </header>
-<div class="bg-light bgsearch border shadow-sm taille-form">
-    <div class="container">
-        <div class="d-flex justify-content-center">
-            <!--    start form-->
 
-            <div class="form">
-                <h1 class="h1trouver">
-                    Trouvez des offres sur des hôtels, des hébergements indépendants
-                    et bien plus encore...<br/>
-                    <h2 class="h2dugite">
-                        Du gîte champêtre cosy à l'appartement citadin design
-                    </h2>
-                </h1>
-                <form class="form-inline" method="GET">
-                    <div class="form-group searchForm">
-                        <input 
-                        class="form-control mr-3" 
-                        type="search" 
-                        name="result" 
-                        placeholder="Recherche..." 
-                        maxlength="30"     
-                        size="30"/>
-                    
-                   
-                        <!-- pour l'instant a dev -->
-                        <!-- <label for="depart">Depart</label>
-                        <input type="date" id="depart" class="form-control mx-sm-3"/>
-                        <label for="arriver">Arriver</label>
-                        <input type="date" id="arriver" class="form-control mx-sm-3"/>
-                        <button class="btn btn btn-primary" type="submit"> -->
-                           
-                        </button>
-                    </div>
-            </div>
-        </div>
-    </div>
-</div>
 <!--end form-->
 
 <div class="container underHeader">
