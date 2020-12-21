@@ -7,8 +7,8 @@ include('inc/header.php');
 // appel à la BBD
 $pdo=getPdo();
 //requête  pour le Read
-$result = $pdo->query("SELECT * FROM gite");
-$gites = $result->fetchall();
+$result = $pdo->query("SELECT * FROM gite WHERE categorie LIKE 'prestige' ORDER BY id_gite DESC ");
+$gites = $result->fetchAll();
 
 // var_dump($gites);
 //pour Delete
