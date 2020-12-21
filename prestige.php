@@ -17,8 +17,6 @@ include('inc/header.php');
 ?>
 
 
-?>
-
 <!-- formulaire de connexion pour l'accés au dashboard de l'admin -->
 <!-- debut foreach -->
 <?php if($gites->rowCount()>0){?>
