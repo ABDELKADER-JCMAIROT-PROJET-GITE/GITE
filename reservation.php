@@ -1,4 +1,27 @@
 <?php
+//con bdd
+$pdo = new PDO('mysql:host=localhost;dbname=projet_gite','root','');
+
+
+
+
+
+//query pour les semaines disponible 
+$query=$pdo->query('SELECT * FROM reservation');
+$weeks=$query->fetchAll();
+
+
+//inscription dans la table de jointure id_gite et id_reservation
+$pre=$pdo->prepare('INSERT INTO gite_reservation(gite_id_gite, reservation_id_reservation) VALUES(:id_gite, :id_reservation)');
+
+$pre->bindParam(':gite_id_gite', $_POST['id_gite'], PDO::PARAM_INT);
+$pre->bindParam(':reservation_id_reservation', $_POST['id_reservation'], PDO::PARAM_INT);
+$pre->execute();
+
+
+
+
+
 include('inc/header.php');
 ?>
     <div class="reservation shadow p-3 mb-5 bg-white rounded"><h1>Ibis Château de Fontainebleau</h1>
@@ -42,7 +65,15 @@ include('inc/header.php');
         <hr>
     </div>
     <div class="d-grid gap-2">
-        <button class="btn btn-warning reserver" type="submit">Reserver</button>
+        <form action="" method="POST">
+            <input type="hidden" name="id_gite" value="<?= $gite['id_gite'] ?>"/>
+              <select class="custom-select mr-sm-2" name="periode" id="inlineFormCustomSelect">
+				<?php foreach ($weeks as $week): extract($week)?>
+                    <option value="<?=$id_reservation?>"><?=$periode?></option>
+                <?php endforeach ?>    
+				</select>
+            <button class="btn btn-warning reserver" type="submit">Reserver</button>
+        </form>
     </div>
 
 

@@ -7,6 +7,8 @@ require_once('libraries/database.php');
 // appel à la BBD
 $pdo=getPdo();
 
+$result = $pdo->query("SELECT * FROM gite");
+$gites = $result->fetchall();
 //requête  pour le Read
 $gites=$pdo->query("SELECT * FROM gite WHERE localisation LIKE 'alpes' ORDER BY id_gite DESC");
 
@@ -41,7 +43,8 @@ include('inc/header.php');
                     </div>
                     <div class="col-md-2">
                         <div class="card-body btnAdmin">
-                            <a href="reservation.php">  <button type="button" class="btn btn-primary">Afficher</button></a>
+                            <!-- pour passer l'id du gite dans l'url pour la reservation -->
+                            <a href="reservation.php?id_gite=<?= $id_gite ?>" class="btn btn-primary">Afficher</button></a>
                         </div>
                     </div>
                 </div>
