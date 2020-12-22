@@ -7,7 +7,7 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
       integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
       crossorigin="anonymous"
-    /> -->
+    />
     <link rel="stylesheet" href="./asset/css/bootstrap.css"/>
     <link rel="stylesheet" href="./asset/css/global.css"/>
     <link rel="stylesheet" href="./asset/css/formulaire.css"/>
@@ -19,69 +19,45 @@
     <title>AbJc.com</title>
 </head>
 <body>
-<header>
-    <!--    start navbar-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-abdel">
-        <div class="container">
-            <a
-                    class="navbar-brand text-white"
-                    href="index.php"
-            >AbJc.com</a
-            >
-            <button
-                    class="navbar-toggler"
-                    type="button"
-                    data-toggle="collapse"
-                    data-target="#navbarSupportedContent"
-                    aria-controls="navbarSupportedContent"
-                    aria-expanded="false"
-                    aria-label="Toggle navigation"
-            >
-                <span class="navbar-toggler-icon"></span>
-            </button>
+<!-- bouton retour à l'inex admin -->
+<div class="btnNavAdmin">
+    <div class="container btn-group ">
+        <a href="index_admin.php" class="btn btn-primary">Accueil admin</a>
+    </div>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a
-                                class="nav-link text-white"
-                                href="index.php"
-                        >Accueil</a>
+<!-- bouton pour accéder à la page de creation de gite -->
 
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white"
-                           href="hotel.php">
+    <div class="container btn-group ">
+        <a href="form_creategite_admin.php" class="btn btn-primary" >Création d'un gite</a>
+    </div>
 
-                            Hotel</a>
+</div>
+<!-- form recherche -->
+<div class="bg-light bgsearch border shadow-sm taille-form">
+    <div class="container">
+        <div class="d-flex justify-content-center">
+            <!--    start form-->
 
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a
-                                class="nav-link text-white"
-                                href="chalet.php"
-                        >Chalet</a
-                        >
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a
-                                class="nav-link text-white"
-                                href="maison.php"
-                        >Maison</a
-                        >
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link text-white"
-                           href="prestige.php">Prestige</a></li>
-
-
-                </ul>
-                <form class="form-inline my-2 my-lg-0"></form>
+            <div class="form">
+                <p>
+                    Recherche par categories ou localisations
+                <p>
+                <form class="form-inline" method="GET">
+                    <div class="form-group searchForm">
+                        <input 
+                        class="form-control mr-3" 
+                        type="search" 
+                        name="result" 
+                        placeholder="Recherche..." 
+                        maxlength="30"     
+                        size="30"/>
+                    </div>
+                </from>
             </div>
         </div>
-    </nav>
-    <!--    end navbar-->
-</header>
+    </div>
+</div>
+
 
 <!--end form-->
 

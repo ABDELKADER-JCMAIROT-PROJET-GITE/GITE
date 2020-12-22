@@ -80,6 +80,8 @@ if ($_POST){
 // var_dump($gite);
 include('inc/header_admin.php');
 ?>
+
+<!--  -->
 <div class="container formAdmin">
     <form method="POST" enctype="multipart/form-data">
         <div class="flexFormAdmin">
