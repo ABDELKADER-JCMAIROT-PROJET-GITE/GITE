@@ -21,6 +21,7 @@ if(isset($_GET['result']) && !empty($_GET['result'])){
 <!-- formulaire de connexion pour l'accés au dashboard de l'admin -->
 <!-- debut foreach -->
 <h1 class="fontainebleau-h1">Fontainebleau</h1>
+<?php if($gites->rowCount()>0){?>
 <?php foreach ($gites as $gite): extract($gite) ?>
 
     <div class="etiquette">
@@ -53,6 +54,7 @@ if(isset($_GET['result']) && !empty($_GET['result'])){
                 </div>
             </div>
         </div>
+
     <?php endforeach ?>
     <?php }else{?>
     <h3>Aucun resultat pour : <?= $result ?>...</h3>
