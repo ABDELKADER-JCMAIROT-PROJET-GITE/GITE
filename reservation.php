@@ -2,9 +2,32 @@
 //con bdd
 $pdo = new PDO('mysql:host=localhost;dbname=projet_gite','root','');
 
+// --------------------read pour la fiche de reservation------------------
+
+$sqlSelect='SELECT * FROM gite WHERE id_gite = :id_gite';
+
+// variable preparatiuon de la requête
+$query = $pdo->prepare($sqlSelect);
+
+// // execution de la requête
+if(isset($_POST['id_gite'])){
+    $id_gite = $_POST['id_gite'];
+}
+elseif(isset($_GET['id_gite'])){
+    $id_gite = $_GET['id_gite'];
+}
+else{
+    die('Produit non trouvé !');
+}
+
+$query->execute(array(
+'id_gite'=>$id_gite,
+));
+$gite=$query->fetch();
 
 
 
+// -------- En dev pour la recup de l'id reservation et id gite------------
 
 //query pour les semaines disponible 
 $query=$pdo->query('SELECT * FROM reservation');
@@ -24,7 +47,7 @@ $pre->execute();
 
 include('inc/header.php');
 ?>
-    <div class="reservation shadow p-3 mb-5 bg-white rounded"><h1>Ibis Château de Fontainebleau</h1>
+    <div class="reservation shadow p-3 mb-5 bg-white rounded"><h1><?=$gite['name']?></h1>
     <span>18 rue de Ferrare, 77300 Fontainebleau, France : A rajouté</span></div>
     <div><h2 class="ibis"></h2>
     <!--        debut entet img-->

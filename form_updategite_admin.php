@@ -26,9 +26,7 @@ $query->execute(array(
 $gite=$query->fetch();
 
 
-//Modifier un produit (UPDATE)
-//if(isset($_POST['id_prod']) && $_POST['id_prod']){
-    
+
 
 if(isset($_POST['id_gite'])){
 

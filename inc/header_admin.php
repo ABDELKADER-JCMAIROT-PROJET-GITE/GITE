@@ -33,12 +33,12 @@
 
 </div>
 <!-- form recherche -->
-<div class="bg-light bgsearch border shadow-sm taille-form">
+<!-- <div class="bg-light bgsearch border shadow-sm taille-form">
     <div class="container">
         <div class="d-flex justify-content-center">
-            <!--    start form-->
+          start form-->
 
-            <div class="form">
+        <!--    <div class="form">
                 <p>
                     Recherche par categories ou localisations
                 <p>
@@ -56,7 +56,7 @@
             </div>
         </div>
     </div>
-</div>
+</div> -->
 
 
 <!--end form-->

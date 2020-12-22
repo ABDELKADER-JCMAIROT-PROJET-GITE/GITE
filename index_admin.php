@@ -18,7 +18,25 @@ if(isset($_GET['result']) && !empty($_GET['result'])){
     $gites=$pdo->query("SELECT * FROM gite WHERE categorie LIKE '%". $result ."%' OR localisation LIKE '%". $result ."%' ORDER BY id_gite DESC");
 }
 
+// ------------------------------- DELETE --------------------------------------
 
+if(isset($_GET['id_gite'])){
+    
+    $sqlSelect='SELECT * FROM `gite` WHERE id_gite = :id_gite';
+// variable preparatiuon de la requête
+    $query = $pdo->prepare($sqlSelect);
+// // execution de la requête
+    $query->bindParam(':id_gite',$_GET['id_gite'],PDO::PARAM_INT);
+    $query->execute();
+    $produit=$query->fetch();
+
+    $req = $pdo->exec("DELETE FROM gite WHERE id_gite = $_GET[id_gite]");
+    // header('Location: index_admin.php');
+}
+//Modifier un produit (UPDATE)
+//if(isset($_POST['id_prod']) && $_POST['id_prod']){
+    
+// ------------------------------FIN DELETE -------------------------------------
 include('inc/header_admin.php');
 ?>
 
