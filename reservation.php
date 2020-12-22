@@ -26,7 +26,6 @@ $query->execute(array(
 $gite=$query->fetch();
 
 
-
 // -------- En dev pour la recup de l'id reservation et id gite------------
 
 //query pour les semaines disponible 
@@ -35,16 +34,13 @@ $weeks=$query->fetchAll();
 
 
 //inscription dans la table de jointure id_gite et id_reservation
+if($_POST){
 $pre=$pdo->prepare('INSERT INTO gite_reservation(gite_id_gite, reservation_id_reservation) VALUES(:id_gite, :id_reservation)');
 
 $pre->bindParam(':gite_id_gite', $_POST['id_gite'], PDO::PARAM_INT);
 $pre->bindParam(':reservation_id_reservation', $_POST['id_reservation'], PDO::PARAM_INT);
 $pre->execute();
-
-
-
-
-
+}
 include('inc/header.php');
 ?>
     <div class="reservation shadow p-3 mb-5 bg-white rounded"><h1><?=$gite['name']?></h1>
@@ -54,20 +50,20 @@ include('inc/header.php');
     <!--        div papa-->
     <div class="photosreservation shadow-lg p-3 mb-5 bg-light rounded">
         <div>
-            <div><img class="suiteluxe" src="ref/photos-hotel-fontainebleau/hall-ibis.jpg" alt=""></div>
-            <div><img class="chambreluxe" src="ref/photos-hotel-fontainebleau/chambre-ibis.jpg" alt=""></div>
+            <div><img class="suiteluxe" src="<?=$gite['image_rect_1']?>" alt=""></div>
+            <div><img class="chambreluxe" src="<?=$gite['image_rect_2']?>" alt=""></div>
         </div>
-        <div><img class="parisvuecathedrale" src="ref/photos-hotel-fontainebleau/ibis-fontainebleau.jpg" alt=""></div>
+        <div><img class="parisvuecathedrale" src="<?=$gite['image_rect_3']?>" alt=""></div>
     </div>
     <h3 class="information-sur-le-logement">Information sur le logement</h3>
-    <div class="detail-paragrhe"><p> description</p>
+    <div class="detail-paragrhe"><p><?=$gite['description']?></p>
         <h3>Ses points forts</h3>
         <i class="fas fa-wifi"> Connexion Wi-Fi gratuite | </i>
         <i class="fas fa-parking"> Parking | </i> <i class="fas fa-paw"> Animaux domestiques admis | </i>
         <i class="fas fa-smoking-ban"> Chambres non-fumeurs | </i>
         <i class="fas fa-glass-cheers"> Bar</i>
         <hr>
-        <h3 class="prix-nuit">93€/Nuit</h3>
+        <h3 class="prix-nuit"><?=$gite['prix']?> €</h3>
         <hr>
         <h3>Disponibilité a partir de la semaine : </h3>
         <hr>
@@ -86,7 +82,7 @@ include('inc/header.php');
     </div>
 
 
-    <!--        fin entete img -->
+    <!-- fin entete img -->
 
 
     </div>

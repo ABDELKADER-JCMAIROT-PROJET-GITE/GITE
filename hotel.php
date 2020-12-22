@@ -35,7 +35,7 @@ if(isset($_GET['result']) && !empty($_GET['result'])){
                     </div>
                     <div class="col-md-2">
                         <div class="card-body btnAdmin">
-                            <a href="reservation.php">  <button type="button" class="btn btn-primary">Afficher</button></a>
+                        <a href="reservation.php?id_gite=<?= $id_gite ?>" class="btn btn-primary">Afficher</button></a>
                         </div>
                     </div>
                 </div>
