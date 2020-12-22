@@ -1,30 +1,23 @@
-<!-- quand on fait une recherche pour l'admin la totalité des gites sont visible
-même s'il n'y a plus de disponibilitée
--->
 <?php
 require_once('libraries/database.php');
 
 // appel à la BBD
 $pdo=getPdo();
 
-$result = $pdo->query("SELECT * FROM gite");
-$gites = $result->fetchall();
 //requête  pour le Read
-$gites=$pdo->query("SELECT * FROM gite WHERE categorie LIKE 'maison' ORDER BY id_gite DESC");
+$gites=$pdo->query("SELECT * FROM gite ORDER BY id_gite DESC");
 
 if(isset($_GET['result']) && !empty($_GET['result'])){
     //securise les données avec htmlspecialchars
     $result = htmlspecialchars($_GET['result']);
     $gites=$pdo->query("SELECT * FROM gite WHERE categorie LIKE '%". $result ."%' OR localisation LIKE '%". $result ."%' ORDER BY id_gite DESC");
-    header('location:search.php');
 }
 include('inc/header.php');
 ?>
 
-
-
 <!-- formulaire de connexion pour l'accés au dashboard de l'admin -->
 <!-- debut foreach -->
+<h1 class="fontainebleau-h1">Votre sélection</h1>
 <?php if($gites->rowCount()>0){?>
     <?php foreach ($gites as $gite): extract($gite) ?>
         <div class="etiquette">

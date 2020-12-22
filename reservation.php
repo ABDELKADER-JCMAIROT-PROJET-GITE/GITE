@@ -9,7 +9,7 @@ $sqlSelect='SELECT * FROM gite WHERE id_gite = :id_gite';
 // variable preparatiuon de la requête
 $query = $pdo->prepare($sqlSelect);
 
-// // execution de la requête
+// execution de la requête
 if(isset($_POST['id_gite'])){
     $id_gite = $_POST['id_gite'];
 }
@@ -21,7 +21,7 @@ else{
 }
 
 $query->execute(array(
-'id_gite'=>$id_gite,
+'id_gite'=>$id_gite
 ));
 $gite=$query->fetch();
 
@@ -32,16 +32,33 @@ $gite=$query->fetch();
 $query=$pdo->query('SELECT * FROM reservation');
 $weeks=$query->fetchAll();
 
+// // ----------  
+// if(isset($_GET['id_gite'])){
+    
+//     $sqlSelect='SELECT * FROM `gite` WHERE id_gite = :id_gite';
+// // variable preparatiuon de la requête
+//     $query = $pdo->prepare($sqlSelect);
+// // // execution de la requête
+//     $query->bindParam(':id_gite',$_GET['id_gite'],PDO::PARAM_INT);
+//     $query->execute();
+//     $produit=$query->fetch();
+
+//     $req = $pdo->exec("DELETE FROM gite WHERE id_gite = $_GET[id_gite]");
+//     // header('Location: index_admin.php');
+// }
+
 
 //inscription dans la table de jointure id_gite et id_reservation
-if($_POST){
+if(isset($_GET['id_gite']) && isset($_GET['id_reservation'])){
 $pre=$pdo->prepare('INSERT INTO gite_reservation(gite_id_gite, reservation_id_reservation) VALUES(:id_gite, :id_reservation)');
 
-$pre->bindParam(':gite_id_gite', $_POST['id_gite'], PDO::PARAM_INT);
-$pre->bindParam(':reservation_id_reservation', $_POST['id_reservation'], PDO::PARAM_INT);
+$pre->bindParam(':id_gite', $_GET['id_gite'], PDO::PARAM_INT);
+$pre->bindParam(':id_reservation', $_GET['id_reservation'], PDO::PARAM_INT);
 $pre->execute();
 }
 include('inc/header.php');
+
+
 ?>
     <div class="reservation shadow p-3 mb-5 bg-white rounded"><h1><?=$gite['name']?></h1>
     <span>18 rue de Ferrare, 77300 Fontainebleau, France : A rajouté</span></div>
@@ -70,9 +87,9 @@ include('inc/header.php');
     </div>
     <!--  -->
     <div class="d-grid gap-2">
-        <form action="" method="POST">
+        <form action="" method="GET">
             <input type="hidden" name="id_gite" value="<?= $gite['id_gite'] ?>"/>
-              <select class="custom-select mr-sm-2" name="periode" id="inlineFormCustomSelect">
+              <select class="custom-select mr-sm-2" name="id_reservation" id="inlineFormCustomSelect">
 				<?php foreach ($weeks as $week): extract($week)?>
                     <option value="<?=$id_reservation?>"><?=$periode?></option>
                 <?php endforeach ?>    

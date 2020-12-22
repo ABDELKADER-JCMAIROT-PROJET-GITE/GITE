@@ -16,6 +16,7 @@ if(isset($_GET['result']) && !empty($_GET['result'])){
     //securise les données avec htmlspecialchars
     $result = htmlspecialchars($_GET['result']);
     $gites=$pdo->query("SELECT * FROM gite WHERE categorie LIKE '%". $result ."%' OR localisation LIKE '%". $result ."%' ORDER BY id_gite DESC");
+    header('location:search.php');
 }
 
 
@@ -36,6 +37,7 @@ include('inc/header.php');
                     <div class="col-md-7">
                         <div class="card-body sleep">
                             <h5 class="card-title"><?=$name?></h5>
+                            <h6><?=$categorie?> <?=$localisation?></h6>
                             <p class="card-text"><?=$description?></p>
                             <p class="card-text"><i class="fas fa-users"> <?=$nbr_couchage?> Adultes</i></p>
                             <h6><?=$prix?>€</h6>
