@@ -91,7 +91,7 @@ if(isset($_POST['id_gite'])){
 
 
 
-include('inc/header.php');
+include('inc/header_admin.php');
 ?>
 <!-- bouton retour à l'inex admin -->
 <div class="container btn-group btnReturnIndex">

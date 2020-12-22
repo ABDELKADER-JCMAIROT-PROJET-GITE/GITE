@@ -10,9 +10,7 @@ $pdo=getPdo();
 // if (!empty($_POST)){
 if ($_POST){ 
     
-echo "<pre>";    
-var_dump($_POST);
-echo "</pre>";  
+
 
     //importation image_rect1 
     $file_name = $_FILES['image_rect_1']['name'];//atteindre le name 
@@ -45,12 +43,6 @@ echo "</pre>";
     $file_img_carre= "img/" . $file_name_carre;//var 
     $type_autorisees = array('.jpg','.gif','.png','.jpeg');//fichier que l'on controle
     copy($file_tmp_name_carre,$file_img_carre);//prend dans le dossier tempo pour le placer dans le dossier img
-
-
-
-
-
-
 
     $gite = $pdo->prepare(
         
