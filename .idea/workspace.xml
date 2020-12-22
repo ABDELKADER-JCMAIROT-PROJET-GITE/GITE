@@ -19,28 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eaf138e0-daef-4cd9-a972-692e5d52b68d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/alpes.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chalet.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fontainebleau.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hotel.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lyon.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/maison.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/marseille.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/paris.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/prestige.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset/css/gite_etiquette.css" beforeDir="false" afterPath="$PROJECT_DIR$/asset/css/gite_etiquette.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset/css/gite_fiche.css" beforeDir="false" afterPath="$PROJECT_DIR$/asset/css/gite_fiche.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset/css/global.css" beforeDir="false" afterPath="$PROJECT_DIR$/asset/css/global.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/carre/ishm-kbpahPWB8Xw-unsplash (1).jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/carre/suite_luxe2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/inc/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/inc/footer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inc/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/inc/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log_admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/log_admin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reservation.php" beforeDir="false" afterPath="$PROJECT_DIR$/reservation.php" afterDir="false" />
-    </list>
+    <list default="true" id="eaf138e0-daef-4cd9-a972-692e5d52b68d" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -68,15 +47,18 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../pascal-crud" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\gite" />
-      <recent name="C:\xampp\htdocs\gite\villes" />
+      <recent name="C:\xampp\htdocs\gite\ref\photos-prestige-fontainebleau" />
+      <recent name="C:\xampp\htdocs\gite\ref\photos-maison-fontainebleau" />
+      <recent name="C:\xampp\htdocs\gite\ref" />
+      <recent name="C:\xampp\htdocs\gite\ref\photos-hotel-fontainebleau\photos-maison-fontainebleau" />
+      <recent name="C:\xampp\htdocs\gite\ref\photos-hotel-fontainebleau" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\gite" />
@@ -94,7 +76,8 @@
       <workItem from="1606830482669" duration="41046000" />
       <workItem from="1607351329289" duration="4785000" />
       <workItem from="1607521970780" duration="11878000" />
-      <workItem from="1607942871233" duration="62926000" />
+      <workItem from="1607942871233" duration="77873000" />
+      <workItem from="1608632171980" duration="1101000" />
     </task>
     <servers />
   </component>
@@ -111,14 +94,19 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="617" y="227" key="FileChooserDialogImpl" timestamp="1607504778582">
+    <state x="509" y="232" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1608299886935">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="509" y="232" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1600.860/1600.0.1920.1040@0.0.1600.860" timestamp="1608299886935" />
+    <state x="617" y="227" key="FileChooserDialogImpl" timestamp="1608562893883">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="617" y="227" key="FileChooserDialogImpl/0.0.1600.860/1600.0.1920.1040@0.0.1600.860" timestamp="1607331745645" />
     <state x="2340" y="275" key="FileChooserDialogImpl/0.0.1600.860/1600.0.1920.1040@1600.0.1920.1040" timestamp="1606842500627" />
-    <state x="617" y="227" key="FileChooserDialogImpl/0.0.1600.860@0.0.1600.860" timestamp="1607504778582" />
+    <state x="617" y="227" key="FileChooserDialogImpl/0.0.1600.860@0.0.1600.860" timestamp="1608562893883" />
     <state x="628" y="153" key="NewPhpClassDialog" timestamp="1608116733392">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
@@ -141,5 +129,9 @@
     <state x="456" y="195" key="run.anything.popup/0.0.1600.860/1600.0.1920.1040@0.0.1600.860" timestamp="1608283251775" />
     <state x="2147" y="236" key="run.anything.popup/0.0.1600.860/1600.0.1920.1040@1600.0.1920.1040" timestamp="1607944789531" />
     <state x="456" y="195" key="run.anything.popup/0.0.1600.860@0.0.1600.860" timestamp="1608117492794" />
+    <state x="463" y="180" width="672" height="678" key="search.everywhere.popup" timestamp="1608299996440">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="463" y="180" width="672" height="678" key="search.everywhere.popup/0.0.1600.860/1600.0.1920.1040@0.0.1600.860" timestamp="1608299996440" />
   </component>
 </project>

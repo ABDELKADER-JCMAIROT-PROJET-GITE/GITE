@@ -1,3 +1,11 @@
+<?php
+require_once('libraries/database.php');
+//connexion base de donnée 
+$pdo=getPdo();
+//implémentation du module de recherche
+
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -95,24 +103,26 @@
                         Du gîte champêtre cosy à l'appartement citadin design
                     </h2>
                 </h1>
-                <form class="form-inline">
+                <form class="form-inline" method="GET">
                     <div class="form-group searchForm">
-                        <input
-                                type="text"
-                                class="form-control mr-3"
-                                placeholder="Destination"
-                                maxlength="30"
-                                size="30"
-                        />
-                        <label for="depart">Depart</label>
+                        <input 
+                        class="form-control mr-3" 
+                        type="search" 
+                        name="result" 
+                        placeholder="Recherche..." 
+                        maxlength="30"     
+                        size="30"/>
+                    
+                   
+                        <!-- pour l'instant a dev -->
+                        <!-- <label for="depart">Depart</label>
                         <input type="date" id="depart" class="form-control mx-sm-3"/>
                         <label for="arriver">Arriver</label>
                         <input type="date" id="arriver" class="form-control mx-sm-3"/>
-                        <button class="btn btn btn-primary" type="submit">
-                            Rechercher
+                        <button class="btn btn btn-primary" type="submit"> -->
+                           
                         </button>
                     </div>
-                </form>
             </div>
         </div>
     </div>

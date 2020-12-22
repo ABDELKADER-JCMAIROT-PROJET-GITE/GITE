@@ -1,6 +1,6 @@
 <?php
 require_once('libraries/database.php');
-require_once('libraries/imagedload.php');
+// require_once('libraries/imagedload.php');
 
 $pdo=getPdo();
 
@@ -78,8 +78,10 @@ if ($_POST){
     
 }
 // var_dump($gite);
-include('inc/header.php');
+include('inc/header_admin.php');
 ?>
+
+<!--  -->
 <div class="container formAdmin">
     <form method="POST" enctype="multipart/form-data">
         <div class="flexFormAdmin">

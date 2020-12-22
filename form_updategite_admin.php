@@ -95,6 +95,13 @@ if(isset($_POST['id_gite'])){
 
 include('inc/header.php');
 ?>
+<!-- bouton retour à l'inex admin -->
+<div class="container btn-group btnReturnIndex">
+    <a href="index_admin.php" class="btn btn-primary">Accueil admin</a>
+    </div>
+<!--  -->
+
+
 <div class="container formAdmin">
     <form method="POST" action="form_updategite_admin.php" enctype="multipart/form-data">
     <input type="hidden" name="id_gite" value="<?= $gite['id_gite'] ?>" />
