@@ -19,7 +19,7 @@ if(isset($_GET['result']) && !empty($_GET['result'])){
 
 ?>
 
-?>
+
 
 <!-- formulaire de connexion pour l'accés au dashboard de l'admin -->
 <!-- debut foreach -->

@@ -27,16 +27,8 @@ if(isset($_GET['result']) && !empty($_GET['result'])){
     <div class="etiquette">
         <div class="card mb-3" style="max-width: 100%;">
             <div class="row g-0">
-
-                <div class="col-md-3">
-                    <div class="imgSizeSquare" style="background-image:  url(<?=$image_rect_1?>);"></div>
-                </div>
-                <div class="col-md-7">
-                    <div class="card-body sleep">
-                        <h5 class="card-title"><?=$name?></h5>
-                        <p class="card-text"><?=$description?></p>
-                        <p class="card-text"><i class="fas fa-users"> <?=$nbr_couchage?> Adultes</i></p>
-                        <h6><?=$prix?>€</h6>
+            <div class="col-md-3">
+                        <div class="imgSizeSquare" style="background-image:  url(<?=$image_rect_1?>);"></div>
                     </div>
                     <div class="col-md-7">
                         <div class="card-body sleep">
@@ -54,7 +46,6 @@ if(isset($_GET['result']) && !empty($_GET['result'])){
                 </div>
             </div>
         </div>
-
     <?php endforeach ?>
     <?php }else{?>
     <h3>Aucun resultat pour : <?= $result ?>...</h3>
