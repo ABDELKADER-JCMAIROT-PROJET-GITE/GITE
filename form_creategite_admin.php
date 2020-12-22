@@ -44,12 +44,6 @@ if ($_POST){
     $type_autorisees = array('.jpg','.gif','.png','.jpeg');//fichier que l'on controle
     copy($file_tmp_name_carre,$file_img_carre);//prend dans le dossier tempo pour le placer dans le dossier img
 
-
-
-
-
-
-
     $gite = $pdo->prepare(
         
         'INSERT INTO gite (name, image_rect_1, image_rect_2, image_rect_3, localisation, description, spec, nbr_couchage, prix, image_carre, categorie)
